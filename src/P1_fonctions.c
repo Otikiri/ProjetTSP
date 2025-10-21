@@ -154,7 +154,7 @@ void gestionSignal(int* bestPerm, double bestLen, int* perm, int taille){
     }
     getchar();
     return;
-};
+}
 
 int tsp_bruteforce(const Graphe* g, DistanceFun f, bool faire_matrice_distance , Tournee* outBest, double* outBestLen, Tournee* outWorst,double* outWorstLen) {
     if (!g || g->dimension <= 0 || !outBest || !outBestLen) return -1;
