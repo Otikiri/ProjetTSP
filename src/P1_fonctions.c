@@ -208,7 +208,7 @@ int tsp_bruteforce(const Graphe* g, DistanceFun f, bool faire_matrice_distance ,
             memcpy(worstPerm, perm, (size_t)N * sizeof(int));
         }
         /* gestion du signal */
-        sigpending(&pendingSet)
+        sigpending(&pendingSet);
         if (sigismember(&pendingSet,SIGINT)==1) gestionSignal(bestPerm,bestLen,perm,N);
     }
 

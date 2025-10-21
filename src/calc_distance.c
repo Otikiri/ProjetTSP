@@ -16,8 +16,7 @@ double calcul_poids_tournee(Tournee* tournee, double (*calc_dist)(Point, Point))
 double calc_dist_eucl2d(Point a, Point b){
     double xd = a.x - b.x;
     double yd = a.y - b.y;
-    double rij = sqrt(xd*xd + yd*yd);
-    return floor(rij + 0.5);
+    return sqrt(xd*xd + yd*yd);;
 }
 
 double calc_dist_geo(Point a, Point b){
