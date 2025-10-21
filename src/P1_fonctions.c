@@ -143,15 +143,17 @@ void gestionSignal(int* bestPerm, double bestLen, int* perm, int taille){
     printf("Permutation actuelle: %s\n", permActuelle);
 
     printf("Voulez vous vraiment quitter? [y or n]\n");
-     
-     c = getchar();
-     if (c == 'y' || c == 'Y'){
+    fflush(stdout);
+
+    c = getchar();
+    if (c == 'y' || c == 'Y'){
        exit(0);
-     }
-     else{
-          printf("On reprends\n");
-     }
-     return;
+    }
+    else{
+        printf("On reprends\n");
+    }
+    getchar();
+    return;
 };
 
 int tsp_bruteforce(const Graphe* g, DistanceFun f, bool faire_matrice_distance , Tournee* outBest, double* outBestLen, Tournee* outWorst,double* outWorstLen) {
@@ -160,6 +162,7 @@ int tsp_bruteforce(const Graphe* g, DistanceFun f, bool faire_matrice_distance ,
 
     /* initialisation signales*/
     sigset_t set,pendingSet;
+    sigemptyset(&set);
     sigaddset(&set,SIGINT);
 
     /*instalation du masque */
@@ -181,8 +184,6 @@ int tsp_bruteforce(const Graphe* g, DistanceFun f, bool faire_matrice_distance ,
         dist = dist_ij_mat;
 
     }
-    
-    
 
     double bestLen ;
     double worstLen;
@@ -209,7 +210,10 @@ int tsp_bruteforce(const Graphe* g, DistanceFun f, bool faire_matrice_distance ,
         }
         /* gestion du signal */
         sigpending(&pendingSet);
-        if (sigismember(&pendingSet,SIGINT)==1) gestionSignal(bestPerm,bestLen,perm,N);
+        if (sigismember(&pendingSet,SIGINT)==1) {
+            gestionSignal(bestPerm,bestLen,perm,N);
+            sigemptyset(&pendingSet);
+        }
     }
 
 
