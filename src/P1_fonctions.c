@@ -119,6 +119,25 @@ void permToString(int* perm, int length, char* outString){
 }
 
 
+void  INThandler(int sig)
+{
+     char  c;
+
+     signal(sig, SIG_IGN);
+     printf("Do you really want to quit? [y/n] \n");
+     c = getchar();
+     if (c == 'y' || c == 'Y'){
+       exit(0);
+     }
+     else{
+          signal(SIGINT, INThandler);
+        }
+
+     getchar(); // Get new line character
+}
+
+
+
 
 /**
  * @brief Fonction de gestion de signale, envoie les valeur trouves au moment du signal et appelle le handler du signal
@@ -133,6 +152,7 @@ void gestionSignal(int* bestPerm, double bestLen, int* perm, int taille){
     char bestPermString[512];
     char permActuelle[512];
     char  c;
+
     
     permToString(perm,taille,permActuelle);
     permToString(bestPerm,taille,bestPermString);
@@ -142,18 +162,8 @@ void gestionSignal(int* bestPerm, double bestLen, int* perm, int taille){
     printf("Longueur de la meilleure tournee: %f\n", bestLen);
     printf("Permutation actuelle: %s\n", permActuelle);
 
-    printf("Voulez vous vraiment quitter? [y or n]\n");
-    fflush(stdout);
-
-    c = getchar();
-    if (c == 'y' || c == 'Y'){
-       exit(0);
-    }
-    else{
-        printf("On reprends\n");
-    }
-    getchar();
-    return;
+    signal(SIGINT,INThandler);
+    
 }
 
 int tsp_bruteforce(const Graphe* g, DistanceFun f, bool faire_matrice_distance , Tournee* outBest, double* outBestLen, Tournee* outWorst,double* outWorstLen) {
