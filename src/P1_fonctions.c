@@ -124,16 +124,9 @@ void  INThandler(int sig)
      char  c;
 
      signal(sig, SIG_IGN);
-     printf("Do you really want to quit? [y/n] \n");
-     c = getchar();
-     if (c == 'y' || c == 'Y'){
-       exit(0);
-     }
-     else{
-          signal(SIGINT, INThandler);
-        }
+    
+     signal(SIGINT,INThandler);
 
-     getchar(); // Get new line character
 }
 
 
@@ -148,7 +141,7 @@ Prend en argument:
  * @param taille la taille des permutations 
  * @return Void
  */
-void gestionSignal(int* bestPerm, double bestLen, int* perm, int taille){
+int gestionSignal(int* bestPerm, double bestLen, int* perm, int taille){
     char bestPermString[512];
     char permActuelle[512];
     char  c;
@@ -162,8 +155,14 @@ void gestionSignal(int* bestPerm, double bestLen, int* perm, int taille){
     printf("Longueur de la meilleure tournee: %f\n", bestLen);
     printf("Permutation actuelle: %s\n", permActuelle);
 
+     printf("Do you really want to quit? [y/n] \n");
+     c = getchar();
+     if (c == 'y' || c == 'Y'){
+       return -1;;
+     }
+    getchar(); // Get new line character
     signal(SIGINT,INThandler);
-    
+    return 0;
 }
 
 int tsp_bruteforce(const Graphe* g, DistanceFun f, bool faire_matrice_distance , Tournee* outBest, double* outBestLen, Tournee* outWorst,double* outWorstLen) {
@@ -221,7 +220,7 @@ int tsp_bruteforce(const Graphe* g, DistanceFun f, bool faire_matrice_distance ,
         /* gestion du signal */
         sigpending(&pendingSet);
         if (sigismember(&pendingSet,SIGINT)==1) {
-            gestionSignal(bestPerm,bestLen,perm,N);
+            if (gestionSignal(bestPerm,bestLen,perm,N)==-1) return -1;
             sigemptyset(&pendingSet);
         }
     }
