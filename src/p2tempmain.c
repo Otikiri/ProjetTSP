@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
     double bestL;
     clock_t begin = clock();
     printf("bah debut\n");
-    int result = tsp_randomWalk(gr, calc_dist, best,&bestL) ;
+    int result = tsp_nearestNeighbour(gr, calc_dist, best,&bestL) ;
     
     printf("bah fin2\n");
     clock_t end = clock();

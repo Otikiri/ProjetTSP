@@ -10,7 +10,7 @@ BINDIR = bin
 
 #Binaries
 TSP = $(BINDIR)/tsp
-# TEST = $(BINDIR)/test
+TEST = $(BINDIR)/p2temp
 
 #Source files
 SRC = $(wildcard $(SRCDIR)/*.c)
@@ -19,8 +19,8 @@ SRC = $(wildcard $(SRCDIR)/*.c)
 OBJ_ALL = $(SRC:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 
 #Objects for the differents executables
-OBJ_TSP = $(filter-out $(OBJDIR)/mainTest.o, $(OBJ_ALL))
-# OBJ_TEST = $(filter-out $(OBJDIR)/main.o, $(OBJ_ALL))
+OBJ_TSP = $(filter-out $(OBJDIR)/p2tempmain.o, $(OBJ_ALL))
+OBJ_TEST = $(filter-out $(OBJDIR)/main.o, $(OBJ_ALL))
 
 all: dirs $(TSP) $(TEST)
 

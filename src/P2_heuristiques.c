@@ -20,7 +20,7 @@ int tsp_randomWalk(const Graphe* graphe, DistanceFun f, Tournee* outTournee, dou
     for (int i = 0; i < graphe->dimension; i++){
         do{
             randomIndice = rand() % graphe->dimension; // Entier random appartenant a [0, graphe->dimension[
-        } while (!isIn(randomIndice, tabOldIndice, nbOldIndice)); // Pour avoir un point qui n'a pas deja ete tire au sort
+        } while (isIn(randomIndice, tabOldIndice, nbOldIndice)); // Pour avoir un point qui n'a pas deja ete tire au sort
 
         // Actualise le tableau des indices deja tires au sort, et incremente sa taille
         tabOldIndice[i] = randomIndice;
@@ -42,10 +42,10 @@ int tsp_nearestNeighbour(const Graphe* graphe, DistanceFun f, Tournee* outTourne
     tabOldIndice[0] = 0;
     int nbOldIndice=1;
     int lastIndice =0;
-    double distance_min=-1;
     int fin=-1;
 
     for (int j=1;j<graphe->dimension;j++) {
+        double distance_min=-1;
         for (int i =1;i<graphe->dimension;i++) {
             if (!isIn(i, tabOldIndice, nbOldIndice)){
                 double distance_temp=f(graphe->point[lastIndice],graphe->point[i]);
