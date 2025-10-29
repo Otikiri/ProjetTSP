@@ -52,6 +52,6 @@ int main(int argc, char *argv[]) {
     char * bestString = toStringArray(*best);
     char * chread="lol";
     printf("bah fin\n");
-    affichageResultat(gr,bestString,bestLen,timeCPU,chread);
+    affichageResultat(gr,bestString,bestL,timeCPU,chread);
     return 0;
 }
