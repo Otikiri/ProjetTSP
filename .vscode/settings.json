@@ -8,6 +8,7 @@
         "matrice.h": "c",
         "sstream": "c",
         "ctrl_c.h": "c",
-        "signal.h": "c"
+        "signal.h": "c",
+        "calc_distance.h": "c"
     }
 }
