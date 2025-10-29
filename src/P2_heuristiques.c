@@ -1,4 +1,4 @@
-#include "P2_heutistiques.h"
+#include "P2_heuristiques.h"
 #include <stdlib.h>
 #include <time.h>
 #include <stdbool.h>
@@ -56,9 +56,9 @@ int tsp_nearestNeighbour(const Graphe* graphe, DistanceFun f, Tournee* outTourne
             }
         }
         tabOldIndice[nbOldIndice]=fin;
+        outTournee->ord_point_vis[nbOldIndice]=graphe->point[fin];
         nbOldIndice++;
         lastIndice=fin;
-        outTournee->ord_point_vis[nbOldIndice]=graphe->point[fin];
     }
     *outLen = calcul_poids_tournee(outTournee, f);
     free(tabOldIndice);

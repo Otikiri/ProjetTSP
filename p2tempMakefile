@@ -1,0 +1,38 @@
+#Compiler and flags 
+CC = gcc
+CFLAGS = -std=gnu11 -Wall
+LDLIBS = -lpthread -lm
+
+#Directories 
+SRCDIR = src
+OBJDIR = obj
+BINDIR = bin
+
+#Binaries
+TSP = $(BINDIR)/tsp_p2temp   # nom différent pour éviter d'écraser l'autre binaire
+
+#Source files
+SRC = $(wildcard $(SRCDIR)/*.c)
+
+#Object files
+OBJ_ALL = $(SRC:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
+
+#Objects for this executable
+# On retire main.o et mainTest.o et on ajoute p2tempmain.o
+OBJ_TSP = $(filter-out $(OBJDIR)/main.o $(OBJDIR)/mainTest.o, $(OBJ_ALL)) $(OBJDIR)/p2tempmain.o
+
+all: dirs $(TSP)
+
+$(TSP): $(OBJ_TSP)
+	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.c
+	@mkdir -p $(OBJDIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+dirs:
+	@mkdir -p $(OBJDIR) $(BINDIR)
+
+clean:
+	rm -f $(OBJDIR)/*.o
+	rm -f $(BINDIR)/*
