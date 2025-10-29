@@ -9,6 +9,7 @@
         "sstream": "c",
         "ctrl_c.h": "c",
         "signal.h": "c",
-        "calc_distance.h": "c"
+        "calc_distance.h": "c",
+        "p2_2opt.h": "c"
     }
 }

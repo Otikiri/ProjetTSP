@@ -8,6 +8,7 @@
 #include "ctrl_c.h"
 #include "P1_fonctions.h"
 #include "P2_heuristiques.h"
+#include "P2_2opt.h"
 
 /*
 Comment utiliser:
@@ -53,5 +54,10 @@ int main(int argc, char *argv[]) {
     char * chread="lol";
     printf("bah fin\n");
     affichageResultat(gr,bestString,bestL,timeCPU,chread);
+
+    tsp_2opt(best,& bestL,calc_dist);
+    bestString = toStringArray(*best);
+    affichageResultat(gr,bestString,bestL,timeCPU,chread);
+
     return 0;
 }
