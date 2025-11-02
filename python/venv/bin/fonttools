@@ -1,4 +1,4 @@
-#!/home/otikiri/ProjetTSP/python/venv/bin/python3
+#!/home/sv/Study/ProjetTSP/python/venv/bin/python3
 import sys
 from fontTools.__main__ import main
 if __name__ == '__main__':
