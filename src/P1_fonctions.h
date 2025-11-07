@@ -24,8 +24,6 @@ int tsp_bruteforce(const Graphe* g, DistanceFun f, bool faire_matrice_distance,
                     Tournee* outBest, double* outBestLen, Tournee* outWorst, double* outWorstLen);
 
 
-typedef double (*DistanceCalc)(const Graphe* g, DistanceFun f, int i, int j, Matrice m);
-
-
+//typedef double (*DistanceCalc)(const Graphe* g, DistanceFun f, int i, int j, Matrice m);
 
 #endif

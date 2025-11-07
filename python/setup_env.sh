@@ -6,10 +6,11 @@ cd "$(dirname "$0")"
 
 # Create virtual environment if it doesn't exist
 if [ ! -d "venv" ]; then
-    echo "Creating virtual environment..."
-    python3 -m venv venv
+    echo "Creating clean virtual environment..."
+    python3 -m venv --without-pip venv
+    source venv/bin/activate
+    curl -sS https://bootstrap.pypa.io/get-pip.py | python
 fi
-
 # Activate the virtual environment
 source venv/bin/activate
 
