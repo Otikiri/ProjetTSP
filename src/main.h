@@ -7,5 +7,7 @@
 #include "calc_distance.h"
 //#include "P1_fonctions.h" Inutilisee dans le .h, changement de place pour le .c
 #include "fnct_affichage.h"
-
+#include "P1_fonctions.h"
+#include "P2_heuristiques.h"
+#include "P2_2opt.h"
 #endif

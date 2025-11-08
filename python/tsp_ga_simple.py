@@ -18,10 +18,9 @@ generations = 1000
 mutation_rate = 0.10
 tournament_size = int(0.5*population_size)
 
-from burma import opt_tour,opt_length,att48_opt_tour # burma.py contient ces données
 
-file = "att48" #burma14 dja1436
-instance = load_tsp_file(file+".tsp")
+file = "../test/att15.tsp" #burma14 dja1436
+instance = load_tsp_file(file)
 
 cities = list(instance.get_nodes())
 instance_dict = instance.as_name_dict()

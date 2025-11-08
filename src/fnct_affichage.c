@@ -20,6 +20,6 @@ void affichage_erreur(){
 }
 
 void affichageResultat(Graphe * g,char * tourneString,double resultat_calc,double temps,char * methode_calc){
-    printf("Instance ; Méthode ; Temps CPU (sec) ; Longueur ; Tour\n");
+    printf("Instance ; Méthode ; Temps CPU; Longueur ; Tour\n");
     printf("%s ; %s ; %f ; %f ; %s\n", g->nom, methode_calc, temps/CLOCKS_PER_SEC, resultat_calc, tourneString); 
 }
