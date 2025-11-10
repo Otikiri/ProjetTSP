@@ -1,8 +1,8 @@
 #ifndef TSP_EVOLUTION_H
 #define TSP_EVOLUTION_H
+#include "struct.h"
 
-
-typedef void (*crossoverFun)(int* parent1, int* parent2, int* child, int n, distanceFun dist, const Graphe* graphe);
+typedef void (*crossoverFun)(int* parent1, int* parent2, int* child, int n, DistanceFun dist, const Graphe* graphe);
 
 /**
  * @brief Realise le croissemente trie de deux individues

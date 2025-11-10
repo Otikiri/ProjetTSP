@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include "calc_distance.h"
 
-#include <stdio.h>
+
 #include <string.h>
 #include "P3_evolution.h"
 #include <float.h>
@@ -450,5 +450,6 @@ int tsp_evolution(
     free(population);
     free(offspring);
     free(selected);
+    return 0; 
 }
 
