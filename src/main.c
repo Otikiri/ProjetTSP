@@ -45,7 +45,9 @@ int test_entree(int argc, char *argv[]){
         if (strcmp(argv[3], "-m") == 0 &&
             strcmp(argv[4], "bf") != 0 &&
             strcmp(argv[4], "nn") != 0 &&
-            strcmp(argv[4], "rw") != 0) {
+            strcmp(argv[4], "rw") != 0 && 
+            strcmp(argv[4], "2optnn")!= 0&& 
+            strcmp(argv[4], "2optrw")!= 0) {
             return 1;
         }
         // Optionally, handle the case where argv[3] is not -m

@@ -10,7 +10,7 @@
 #include "P1_fonctions.h"
 #include "P2_heuristiques.h"
 #include "P2_2opt.h"
-
+#include "lectureTSPLIB.h"
 /* --- UTILS --- */
 /**
  * @brief calcule la longueur de l'individu passe en parametre
@@ -355,7 +355,7 @@ int tsp_evolution(
     double mutation_rate,
     int tournament_size,
     DistanceFun distance,
-    const Graphe* graphe,
+    Graphe* graphe,
     crossoverFun crossover,
 
     Tournee* outBest, 
@@ -372,12 +372,12 @@ int tsp_evolution(
     int** offspring   = malloc(population_size * sizeof(int*));
     int** selected    = malloc(population_size * sizeof(int*));
 
-    Tournee tInit;
+    Tournee * tInit = createTourneCanonique(graphe);
     double buffer;
-    tsp_randomWalk(graphe, distance,&tInit,&buffer);
+    tsp_randomWalk(graphe, distance,tInit,&buffer);
     int cities[n];
     for (int i = 0; i < n; i++)
-        cities[i]=tInit.ord_point_vis[i].id;
+        cities[i]=tInit->ord_point_vis[i].id;
     
     for(int i = 0; i < population_size; i++) {
         population[i] = malloc(n*sizeof(int));

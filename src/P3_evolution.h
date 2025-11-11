@@ -52,7 +52,7 @@ int tsp_evolution(
     double mutation_rate,
     int tournament_size,
     DistanceFun distance,
-    const Graphe* graphe,
+    Graphe* graphe,
     crossoverFun crossover,
 
     Tournee* outBest, 
