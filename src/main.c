@@ -9,14 +9,23 @@
 
 
 typedef enum{ 
-    CANONICAL,BRUTEFORCE,NEAREST_NEIGHBOUR,RANDOM_WALK,OPT_NN,OPT_RW,UNKNOWN
+    CANONICAL,BRUTEFORCE,NEAREST_NEIGHBOUR,RANDOM_WALK,OPT_NN,OPT_RW,GA,GADPX,UNKNOWN
 }Algo_type;
 
+int checkValues(char * argv[]){
+    int v1 = atoi(argv[5]);
+    int v2 = atoi(argv[6]);
+    int v3 = atoi(argv[7]);
+    if (v1 <= 0 || v2 <= 0 || v3 <=0)
+    {
+        return 1;
+    }
+    return 0;
+}
 
 int test_entree(int argc, char *argv[]){
-    if (argc <2)
+    if (argc <2 || argc == 3 || argc == 6 || argc ==7 || argc >8)
     {
-        affichage_erreur(); 
         return 1;
     }
     else if (argc ==2)
@@ -26,24 +35,33 @@ int test_entree(int argc, char *argv[]){
             affichage_help();
             return 1;
         }else{
-            affichage_erreur();
             return 1; 
         }
     }else if (argc == 4 && strcmp(argv[3],"-c")!=0)
     {
-        affichage_erreur();
         return 1;
-    }else if (argc == 5 && 
-        (strcmp(argv[3], "-m") != 0 
-        &&( strcmp(argv[4], "bf") != 0
-        || strcmp(argv[4], "nn") != 0
-        || strcmp(argv[4], "rw") != 0 ))) {
-        affichage_erreur();
-        return 1;
+    }else if (argc == 5) {
+        // If argv[3] is -m, check that argv[4] is a valid method
+        if (strcmp(argv[3], "-m") == 0 &&
+            strcmp(argv[4], "bf") != 0 &&
+            strcmp(argv[4], "nn") != 0 &&
+            strcmp(argv[4], "rw") != 0) {
+            return 1;
+        }
+        // Optionally, handle the case where argv[3] is not -m
+        else if (strcmp(argv[3], "-m") != 0) {
+            return 1;
+        }
+    }else if(argc == 8){ 
+        if (strcmp(argv[3],"-m") == 0
+        && strcmp(argv[4],"ga")!=0
+        && strcmp(argv[4],"gadpx")!=0)
+        {
+            return checkValues(argv);
+        }
     }
     return 0; 
 }
-
 
 Algo_type returnAlgoType(char * chRead){
     if (strcmp(chRead,"-c")==0) return CANONICAL;
@@ -52,6 +70,8 @@ Algo_type returnAlgoType(char * chRead){
     if (strcmp(chRead,"rw")==0) return RANDOM_WALK;
     if (strcmp(chRead,"2optnn")==0) return OPT_NN;
     if (strcmp(chRead,"2optrw")==0) return OPT_RW;
+    if (strcmp(chRead,"ga")==0) return GA;
+    if (strcmp(chRead,"gadpx")==0) return GADPX;
     return UNKNOWN;
 }
 
@@ -63,7 +83,6 @@ void canon_wrapper(Graphe * gr,char * chRead,DistanceFun calc_dist){
     affichageResultat(gr,turnString,resCanonicalTurn,0.0,chRead);
     free(turnString);
     detruireTournee(t);
-    //exit(EXIT_SUCCESS);
 }
 
 void bf_wrapper(Graphe * gr,char * chRead,DistanceFun calc_dist){
@@ -121,7 +140,6 @@ void nn_wrapper(Graphe * gr,char * chRead,DistanceFun calc_dist){
     affichageResultat(gr,bestString,bestL,(double)(end-begin),chRead);
     free(bestString);
     detruireTournee(best);
-    //exit(EXIT_SUCCESS);
 }
 
 void rw_wrapper(Graphe * gr,char * chRead,DistanceFun calc_dist){
@@ -134,7 +152,6 @@ void rw_wrapper(Graphe * gr,char * chRead,DistanceFun calc_dist){
     affichageResultat(gr,bestString,bestL,(double)(end-begin),chRead);
     free(bestString);
     detruireTournee(best);
-    //exit(EXIT_SUCCESS);
 }
 
 void optnn_wrapper(Graphe * gr,char * chRead,DistanceFun calc_dist){
@@ -150,7 +167,6 @@ void optnn_wrapper(Graphe * gr,char * chRead,DistanceFun calc_dist){
     affichageResultat(gr,bestString,bestL,(double)(end-begin),chRead);
     free(bestString);
     detruireTournee(best);
-    //exit(EXIT_SUCCESS);
 }
 
 void optrw_wrapper(Graphe * gr,char * chRead,DistanceFun calc_dist){
@@ -165,14 +181,33 @@ void optrw_wrapper(Graphe * gr,char * chRead,DistanceFun calc_dist){
     char * bestString = toStringArray(*best);
     affichageResultat(gr,bestString,bestL,(double)(end-begin),chRead);
     free(bestString);
-    detruireTournee(best);
-    //exit(EXIT_SUCCESS);
+    detruireTournee(best);  
+}
+
+void ga_wrapper(Graphe * gr, char * chRead,DistanceFun calc_dist,char * argv[]){
+    Tournee * best = createTourneCanonique(gr);
+    double bestL;   
+    int nbInd = atoi(argv[5]);
+    int nbGen = atoi(argv[6]);
+    double tauxMutDouble = strtod(argv[7], NULL); // if mutation rate is a fraction like 0.10
+
+    if (nbInd <= 0 || nbGen <= 0 || tauxMutDouble < 0.0) {
+        fprintf(stderr, "Invalid GA parameters %d %d %f\n",nbInd,nbGen,tauxMutDouble);
+        exit(EXIT_FAILURE);
+    }
+    
+    clock_t begin = clock();
+    tsp_evolution(nbInd,nbGen,tauxMutDouble,nbInd/2,calc_dist,gr,orderedCrossover,best,&bestL);
+    clock_t end = clock();
+    char * bestString = toStringArray(*best);
+    affichageResultat(gr,bestString,bestL,(double)(end-begin),chRead);
 }
 
 int main(int argc,char *argv[]){
     
     if (test_entree(argc,argv)==1)
     {
+        affichage_erreur();
         return 1;
     }
     
@@ -220,11 +255,14 @@ int main(int argc,char *argv[]){
     case OPT_RW:
         optrw_wrapper(gr,chRead,calc_dist); 
         break;
+    case GA:
+        ga_wrapper(gr,chRead,calc_dist,argv);
+        break; 
+    case GADPX: 
+        break;
     case UNKNOWN: 
         exit(EXIT_FAILURE);
     }
     free_graphe(gr);
-    
-    
     return 0;
 }
