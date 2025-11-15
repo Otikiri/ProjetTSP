@@ -310,7 +310,7 @@ static void rebuild_child_from_next(int* child, const int* next, int n) {
  * @param graphe graphe d'un fichier tsp
  * @return int 0 si tout se passe bien -1 en cas d'erreur
  */
-void dpx_crossover(const int* p1, const int* p2, int* child, int n, DistanceFun dist, const Graphe* graphe) {
+void dpx_crossover(int* p1, int* p2, int* child, int n, DistanceFun dist, const Graphe* graphe) {
 
     // 1. Initialiser l'enfant = copie de parent1
     memcpy(child, p1, n * sizeof(int));
@@ -377,7 +377,7 @@ int tsp_evolution(
     tsp_randomWalk(graphe, distance,tInit,&buffer);
     int cities[n];
     for (int i = 0; i < n; i++)
-        cities[i]=tInit->ord_point_vis[i].id;
+        cities[i]=tInit->ord_point_vis[i].id-1;
     
     for(int i = 0; i < population_size; i++) {
         population[i] = malloc(n*sizeof(int));
@@ -450,6 +450,7 @@ int tsp_evolution(
     free(population);
     free(offspring);
     free(selected);
+    detruireTournee(tInit);
     return 0; 
 }
 

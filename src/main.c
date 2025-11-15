@@ -12,6 +12,9 @@ typedef enum{
     CANONICAL,BRUTEFORCE,NEAREST_NEIGHBOUR,RANDOM_WALK,OPT_NN,OPT_RW,GA,GADPX,UNKNOWN
 }Algo_type;
 
+/* FONCTION DE VERIFICATIONS */
+
+/* Fonction pour verifier que les valeurs pour ga et gadpx sont valides*/
 int checkValues(char * argv[]){
     int v1 = atoi(argv[5]);
     int v2 = atoi(argv[6]);
@@ -23,6 +26,7 @@ int checkValues(char * argv[]){
     return 0;
 }
 
+/* Fonction pour verifier les inputs de l'utilisateur*/
 int test_entree(int argc, char *argv[]){
     if (argc <2 || argc == 3 || argc == 6 || argc ==7 || argc >8)
     {
@@ -65,6 +69,8 @@ int test_entree(int argc, char *argv[]){
     return 0; 
 }
 
+
+/* FONCTIONS AUXILIAIRES DU MAIN */
 Algo_type returnAlgoType(char * chRead){
     if (strcmp(chRead,"-c")==0) return CANONICAL;
     if (strcmp(chRead,"bf")==0) return BRUTEFORCE;
@@ -203,7 +209,31 @@ void ga_wrapper(Graphe * gr, char * chRead,DistanceFun calc_dist,char * argv[]){
     clock_t end = clock();
     char * bestString = toStringArray(*best);
     affichageResultat(gr,bestString,bestL,(double)(end-begin),chRead);
+    detruireTournee(best);
+    free(bestString);
 }
+void gadpx_wrapper(Graphe * gr, char * chRead,DistanceFun calc_dist,char * argv[]){
+    Tournee * best = createTourneCanonique(gr);
+    double bestL;   
+    int nbInd = atoi(argv[5]);
+    int nbGen = atoi(argv[6]);
+    double tauxMutDouble = strtod(argv[7], NULL); // if mutation rate is a fraction like 0.10
+
+    if (nbInd <= 0 || nbGen <= 0 || tauxMutDouble < 0.0) {
+        fprintf(stderr, "Invalid GA parameters %d %d %f\n",nbInd,nbGen,tauxMutDouble);
+        exit(EXIT_FAILURE);
+    }
+    
+    clock_t begin = clock();
+    tsp_evolution(nbInd,nbGen,tauxMutDouble,nbInd/2,calc_dist,gr,dpx_crossover,best,&bestL);
+    clock_t end = clock();
+    char * bestString = toStringArray(*best);
+    affichageResultat(gr,bestString,bestL,(double)(end-begin),chRead);
+    detruireTournee(best);
+    free(bestString);
+}
+
+/* MAIN */
 
 int main(int argc,char *argv[]){
     
@@ -261,6 +291,7 @@ int main(int argc,char *argv[]){
         ga_wrapper(gr,chRead,calc_dist,argv);
         break; 
     case GADPX: 
+        ga_wrapper(gr,chRead,calc_dist,argv);
         break;
     case UNKNOWN: 
         exit(EXIT_FAILURE);

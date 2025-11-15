@@ -19,15 +19,15 @@ void orderedCrossover(int* parent1, int* parent2, int* child, int n,DistanceFun 
 
 /**
  * @brief Realise le croissemente DPX de deux individues
- * @param p1 un des parent pour le coisement
- * @param p2 un des parent pour le coisement
+ * @param p1 un des parent pour le croisement
+ * @param p2 un des parent pour le croisement
  * @param child resultat du croissement DPX
  * @param n taille des individues (meme taille pour le nb de connexions)
  * @param dist fonction de distance utilise
  * @param graphe graphe d'un fichier tsp
  * @return int 0 si tout se passe bien -1 en cas d'erreur
  */
-void dpx_crossover(const int* p1, const int* p2, int* child, int n, DistanceFun dist, const Graphe* graphe);
+void dpx_crossover( int* p1, int* p2, int* child, int n, DistanceFun dist, const Graphe* graphe);
 
 
 
