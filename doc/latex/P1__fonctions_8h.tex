@@ -3,16 +3,14 @@
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}matrice.\+h\char`\"{}}\newline
-Include dependency graph for P1\+\_\+fonctions.\+h\+:
-\nopagebreak
+Include dependency graph for P1\+\_\+fonctions.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=262pt]{P1__fonctions_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -35,7 +33,9 @@ typedef double($\ast$ \mbox{\hyperlink{P1__fonctions_8h_ae59bf56ccd7b2fbda5ef182
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{P1__fonctions_8h_a31c3abe8a7a1dba481e09eeff95a334a}{tsp\+\_\+bruteforce}} (const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$g, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} f, bool faire\+\_\+matrice\+\_\+distance, \mbox{\hyperlink{structTournee}{Tournee}} $\ast$out\+Best, double $\ast$out\+Best\+Len, \mbox{\hyperlink{structTournee}{Tournee}} $\ast$out\+Worst, double $\ast$out\+Worst\+Len)
-\begin{DoxyCompactList}\small\item\em Fonction appliquant l\textquotesingle{}algorithme brute force au graphe passee en parametre et retournant la meilleure/pire tournee et sa longueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Fonction appliquant l\textquotesingle{}algorithme brute force au graphe passee en parametre et retournant la meilleure/pire tournee et sa longueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{P1__fonctions_8h_ab55342fc4f408ac45acbb720cac0c54c}{fill\+\_\+tournee\+\_\+from\+\_\+perm}} (const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$g, const int $\ast$perm, int n, \mbox{\hyperlink{structTournee}{Tournee}} $\ast$out)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Macro Definition Documentation}
@@ -63,6 +63,19 @@ int \mbox{\hyperlink{P1__fonctions_8h_a31c3abe8a7a1dba481e09eeff95a334a}{tsp\+\_
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{P1__fonctions_8h_ab55342fc4f408ac45acbb720cac0c54c}\label{P1__fonctions_8h_ab55342fc4f408ac45acbb720cac0c54c}} 
+\index{P1\_fonctions.h@{P1\_fonctions.h}!fill\_tournee\_from\_perm@{fill\_tournee\_from\_perm}}
+\index{fill\_tournee\_from\_perm@{fill\_tournee\_from\_perm}!P1\_fonctions.h@{P1\_fonctions.h}}
+\doxysubsubsection{\texorpdfstring{fill\_tournee\_from\_perm()}{fill\_tournee\_from\_perm()}}
+{\footnotesize\ttfamily int fill\+\_\+tournee\+\_\+from\+\_\+perm (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{g,  }\item[{const int $\ast$}]{perm,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{structTournee}{Tournee}} $\ast$}]{out }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{P1__fonctions_8h_ab55342fc4f408ac45acbb720cac0c54c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{P1__fonctions_8h_a31c3abe8a7a1dba481e09eeff95a334a}\label{P1__fonctions_8h_a31c3abe8a7a1dba481e09eeff95a334a}} 
 \index{P1\_fonctions.h@{P1\_fonctions.h}!tsp\_bruteforce@{tsp\_bruteforce}}
 \index{tsp\_bruteforce@{tsp\_bruteforce}!P1\_fonctions.h@{P1\_fonctions.h}}
@@ -93,19 +106,17 @@ Fonction appliquant l\textquotesingle{}algorithme brute force au graphe passee e
 \begin{DoxyReturn}{Returns}
 int\+: -\/1 si erreur, 0 sinon 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{P1__fonctions_8h_a31c3abe8a7a1dba481e09eeff95a334a_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=244pt]{P1__fonctions_8h_a31c3abe8a7a1dba481e09eeff95a334a_icgraph}
+\includegraphics[width=350pt]{P1__fonctions_8h_a31c3abe8a7a1dba481e09eeff95a334a_icgraph}
 \end{center}
 \end{figure}

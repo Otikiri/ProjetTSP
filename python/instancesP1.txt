@@ -1,0 +1,3 @@
+../test/att5.tsp
+../test/burma5.tsp 
+../test/berlin5.tsp

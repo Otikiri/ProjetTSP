@@ -1,7 +1,8 @@
 <map id="createNewMat" name="createNewMat">
-<area shape="rect" id="node1" title="Creation d&#39;une nouvelle sous matrice." alt="" coords="703,5,820,32"/>
-<area shape="rect" id="node2" href="$matrice_8c.html#a6b166768f75cb194579c8ca6c6c285e9" title="Ajouter un point a une matrice." alt="" coords="512,5,655,32"/>
-<area shape="rect" id="node3" href="$matrice_8c.html#a663bbcfc009ba3bc74a2365df3d8b2c1" title="Creer une matrice en utilisant une graphe." alt="" coords="272,5,464,32"/>
-<area shape="rect" id="node4" href="$P1__fonctions_8c.html#a31c3abe8a7a1dba481e09eeff95a334a" title="Fonction appliquant l&#39;algorithme brute force au graphe passee en parametre et retournant la meilleure..." alt="" coords="108,5,224,32"/>
-<area shape="rect" id="node5" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" id="node1" title="Creation d&#39;une nouvelle sous matrice." alt="" coords="845,5,963,32"/>
+<area shape="rect" id="node2" href="$matrice_8c.html#a6b166768f75cb194579c8ca6c6c285e9" title="Ajouter un point a une matrice." alt="" coords="655,5,797,32"/>
+<area shape="rect" id="node3" href="$matrice_8c.html#a663bbcfc009ba3bc74a2365df3d8b2c1" title="Creer une matrice en utilisant une graphe." alt="" coords="415,5,607,32"/>
+<area shape="rect" id="node4" href="$P1__fonctions_8c.html#a31c3abe8a7a1dba481e09eeff95a334a" title="Fonction appliquant l&#39;algorithme brute force au graphe passee en parametre et retournant la meilleure..." alt="" coords="251,5,367,32"/>
+<area shape="rect" id="node5" href="$main_8c.html#a3319d225054a969e823e364c48a8d0a4" title=" " alt="" coords="108,5,203,32"/>
+<area shape="rect" id="node6" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,32"/>
 </map>

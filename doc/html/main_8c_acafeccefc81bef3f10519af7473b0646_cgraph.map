@@ -1,5 +1,5 @@
 <map id="test_entree" name="test_entree">
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,101,57"/>
-<area shape="rect" id="node2" href="$fnct__affichage_8c.html#aedb2b33ef2b081e69048f321459653f4" title="Fonction d&#39;affichage d&#39;aide lorsqu&#39;il y a une erreur d&#39;utilisation du programme." alt="" coords="149,5,277,32"/>
-<area shape="rect" id="node3" href="$fnct__affichage_8c.html#a1d0f8f3272ce4fe83344792a19375ff5" title="Fonction d&#39;affichage d&#39;aide pour l&#39;utilisation du programme." alt="" coords="155,56,272,83"/>
+<area shape="rect" id="node2" href="$fnct__affichage_8c.html#a1d0f8f3272ce4fe83344792a19375ff5" title="Fonction d&#39;affichage d&#39;aide pour l&#39;utilisation du programme." alt="" coords="149,5,267,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#ae0eb641062cd47a8121127a4b350d0a2" title=" " alt="" coords="157,56,259,83"/>
 </map>

@@ -1,4 +1,14 @@
 <map id="createTourneCanonique" name="createTourneCanonique">
-<area shape="rect" id="node1" title="Creer dynamiquement et renvoie la tournee canonique tu graphe passe en parametre." alt="" coords="108,5,283,32"/>
-<area shape="rect" id="node2" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" id="node1" title="Creer dynamiquement et renvoie la tournee canonique tu graphe passe en parametre." alt="" coords="445,233,620,260"/>
+<area shape="rect" id="node2" href="$main_8c.html#a3319d225054a969e823e364c48a8d0a4" title=" " alt="" coords="122,108,217,135"/>
+<area shape="rect" id="node4" href="$main_8c.html#a12ff7752fb5d742446efaa3d5b316376" title=" " alt="" coords="109,184,230,211"/>
+<area shape="rect" id="node5" href="$main_8c.html#a331963667831d5d909feb5a7d32e4060" title=" " alt="" coords="120,304,219,331"/>
+<area shape="rect" id="node6" href="$main_8c.html#a073fe820dbfcf11a6ea3b5749dc7ecb1" title=" " alt="" coords="108,247,231,273"/>
+<area shape="rect" id="node7" href="$p2tempmain_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="311,208,365,235"/>
+<area shape="rect" id="node8" href="$main_8c.html#ad0b8390d6edd245862f694eabb7e9a76" title=" " alt="" coords="120,357,219,384"/>
+<area shape="rect" id="node9" href="$main_8c.html#ac0f09cd02b79911b08c41d2fb28488f4" title=" " alt="" coords="279,411,397,437"/>
+<area shape="rect" id="node10" href="$main_8c.html#ac577e6ff8e5d830a9c3a340e6fe9d0f3" title=" " alt="" coords="279,461,397,488"/>
+<area shape="rect" id="node11" href="$main_8c.html#ade48beabea1ddeccd53f1912a38dc882" title=" " alt="" coords="289,5,387,32"/>
+<area shape="rect" id="node12" href="$P3__evolution_8c.html#a9cb05755f1bf2b4bb4ee95927f902eab" title="Algorithe d&#39;evolution qui donne la meilleur trounee trouve." alt="" coords="283,259,393,285"/>
+<area shape="rect" id="node3" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,304,60,331"/>
 </map>

@@ -1,0 +1,21 @@
+<map id="bf_wrapper" name="bf_wrapper">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,100,184"/>
+<area shape="rect" id="node2" href="$fnct__affichage_8c.html#a1eadb71bcc688effcb9ef828dc8c0e9f" title="Fonction d&#39;affichage des resultats." alt="" coords="167,5,303,32"/>
+<area shape="rect" id="node3" href="$lectureTSPLIB_8c.html#ada80ce156789590ff55aa2d2b602a403" title="Creer dynamiquement et renvoie la tournee canonique tu graphe passe en parametre." alt="" coords="148,56,323,83"/>
+<area shape="rect" id="node4" href="$lectureTSPLIB_8c.html#a3a73abb56d66138429ed41b21570f644" title="Fonction liberant l&#39;espace memoire de la Tournee donnee en parametre." alt="" coords="173,107,297,133"/>
+<area shape="rect" id="node5" href="$lectureTSPLIB_8c.html#a9f9e3c694319d74371adca5948038e4c" title="Libère un graphe allouée dynamiquement." alt="" coords="185,157,285,184"/>
+<area shape="rect" id="node6" href="$ctrl__c_8c.html#a6a3869251603ae4e569abadbd7dab11c" title="Gere le signal du controle&#45;C." alt="" coords="420,169,513,196"/>
+<area shape="rect" id="node7" href="$lectureTSPLIB_8c.html#a47a4df6ceebd46f6e9760ac6b38d3459" title="Convertit une tournee passee en parametre en chaine de caracteres formatee." alt="" coords="181,259,289,285"/>
+<area shape="rect" id="node8" href="$P1__fonctions_8c.html#a31c3abe8a7a1dba481e09eeff95a334a" title="Fonction appliquant l&#39;algorithme brute force au graphe passee en parametre et retournant la meilleure..." alt="" coords="177,347,293,373"/>
+<area shape="rect" id="node9" href="$matrice_8c.html#a663bbcfc009ba3bc74a2365df3d8b2c1" title="Creer une matrice en utilisant une graphe." alt="" coords="371,220,563,247"/>
+<area shape="rect" id="node12" href="$P1__fonctions_8c.html#a64de998d1f9805d140a28396b0d6b434" title=" " alt="" coords="436,271,497,297"/>
+<area shape="rect" id="node13" href="$P1__fonctions_8c.html#ac40f991f1b04df62aeb8cf28567f459b" title=" " alt="" coords="419,321,514,348"/>
+<area shape="rect" id="node15" href="$P1__fonctions_8c.html#ab55342fc4f408ac45acbb720cac0c54c" title=" " alt="" coords="379,372,554,399"/>
+<area shape="rect" id="node16" href="$matrice_8c.html#a1f28309512b940f720c96271d77d5878" title="detruie la matrice rentrer en parametre" alt="" coords="418,423,515,449"/>
+<area shape="rect" id="node17" href="$P1__fonctions_8c.html#aff899d842076b541dbd73b03bfa32d51" title=" " alt="" coords="397,473,536,500"/>
+<area shape="rect" id="node18" href="$P1__fonctions_8c.html#a686b473f131899518e7e686250c21fbf" title="Transforme une permutation (tableau d&#39;entiers) en une string qui est passee en parametre." alt="" coords="413,524,521,551"/>
+<area shape="rect" id="node19" href="$P1__fonctions_8c.html#a337119eece61f49a77bd5c3490d0c420" title=" " alt="" coords="379,575,554,601"/>
+<area shape="rect" id="node10" href="$matrice_8c.html#a6b166768f75cb194579c8ca6c6c285e9" title="Ajouter un point a une matrice." alt="" coords="611,220,753,247"/>
+<area shape="rect" id="node11" href="$matrice_8c.html#a481576d3f075460eb19a693f9d8cc924" title="Creation d&#39;une nouvelle sous matrice." alt="" coords="801,220,919,247"/>
+<area shape="rect" id="node14" href="$matrice_8c.html#adca8dd6fa9a6344c509c7a0a4a3806b4" title="donne la distance entre 2 points de la matrice" alt="" coords="632,321,732,348"/>
+</map>

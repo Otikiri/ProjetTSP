@@ -1,27 +1,46 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,335,60,361"/>
-<area shape="rect" id="node2" href="$fnct__affichage_8c.html#aedb2b33ef2b081e69048f321459653f4" title="Fonction d&#39;affichage d&#39;aide lorsqu&#39;il y a une erreur d&#39;utilisation du programme." alt="" coords="131,5,259,32"/>
-<area shape="rect" id="node3" href="$fnct__affichage_8c.html#a1d0f8f3272ce4fe83344792a19375ff5" title="Fonction d&#39;affichage d&#39;aide pour l&#39;utilisation du programme." alt="" coords="137,56,254,83"/>
-<area shape="rect" id="node4" href="$fnct__affichage_8c.html#a1eadb71bcc688effcb9ef828dc8c0e9f" title="Fonction d&#39;affichage des resultats." alt="" coords="127,107,263,133"/>
-<area shape="rect" id="node5" href="$calc__distance_8c.html#ac6b7da1dc297b93e5316b68f0401d39d" title="Calcul la distance ATT entre points." alt="" coords="143,157,247,184"/>
-<area shape="rect" id="node6" href="$calc__distance_8c.html#a9535028b3a5d93b4a5d515e577d153a0" title="Calcul la distance euclidienne en 2D entre points." alt="" coords="131,208,260,235"/>
-<area shape="rect" id="node7" href="$calc__distance_8c.html#a7084007a4746b0ec66964145fa2a6029" title="Calcul la distance geographique entre points." alt="" coords="140,259,251,285"/>
-<area shape="rect" id="node8" href="$calc__distance_8c.html#a941a8f33326e911c918d939714e6c82f" title="Calcul la distance totale d&#39;une tournee." alt="" coords="116,309,275,336"/>
-<area shape="rect" id="node9" href="$lectureTSPLIB_8c.html#ada80ce156789590ff55aa2d2b602a403" title="Creer dynamiquement et renvoie la tournee canonique tu graphe passe en parametre." alt="" coords="108,360,283,387"/>
-<area shape="rect" id="node10" href="$lectureTSPLIB_8c.html#a3a73abb56d66138429ed41b21570f644" title="Fonction liberant l&#39;espace memoire de la Tournee donnee en parametre." alt="" coords="133,411,257,437"/>
-<area shape="rect" id="node11" href="$lectureTSPLIB_8c.html#a9f9e3c694319d74371adca5948038e4c" title="Libère un graphe allouée dynamiquement." alt="" coords="377,475,477,501"/>
-<area shape="rect" id="node12" href="$ctrl__c_8c.html#a6a3869251603ae4e569abadbd7dab11c" title="Gere le signal du controle&#45;C." alt="" coords="380,537,473,564"/>
-<area shape="rect" id="node13" href="$lectureTSPLIB_8c.html#a1a174a6a279fe4ec3f75915c03e935cf" title="Lit un fichier TSPLIB et crée un Graphe." alt="" coords="144,512,247,539"/>
-<area shape="rect" id="node14" href="$lectureTSPLIB_8c.html#a47a4df6ceebd46f6e9760ac6b38d3459" title="Convertit une tournee passee en parametre en chaine de caracteres formatee." alt="" coords="141,613,249,640"/>
-<area shape="rect" id="node15" href="$P1__fonctions_8c.html#a31c3abe8a7a1dba481e09eeff95a334a" title="Fonction appliquant l&#39;algorithme brute force au graphe passee en parametre et retournant la meilleure..." alt="" coords="137,689,253,716"/>
-<area shape="rect" id="node16" href="$matrice_8c.html#a663bbcfc009ba3bc74a2365df3d8b2c1" title="Creer une matrice en utilisant une graphe." alt="" coords="331,588,523,615"/>
-<area shape="rect" id="node19" href="$P1__fonctions_8c.html#a64de998d1f9805d140a28396b0d6b434" title=" " alt="" coords="396,639,457,665"/>
-<area shape="rect" id="node20" href="$P1__fonctions_8c.html#ac40f991f1b04df62aeb8cf28567f459b" title=" " alt="" coords="379,689,474,716"/>
-<area shape="rect" id="node22" href="$P1__fonctions_8c.html#ab55342fc4f408ac45acbb720cac0c54c" title=" " alt="" coords="339,740,514,767"/>
-<area shape="rect" id="node23" href="$P1__fonctions_8c.html#aff899d842076b541dbd73b03bfa32d51" title=" " alt="" coords="357,791,496,817"/>
-<area shape="rect" id="node24" href="$P1__fonctions_8c.html#a686b473f131899518e7e686250c21fbf" title="Transforme une permutation (tableau d&#39;entiers) en une string qui est passee en parametre." alt="" coords="373,841,481,868"/>
-<area shape="rect" id="node25" href="$P1__fonctions_8c.html#a337119eece61f49a77bd5c3490d0c420" title=" " alt="" coords="339,892,514,919"/>
-<area shape="rect" id="node17" href="$matrice_8c.html#a6b166768f75cb194579c8ca6c6c285e9" title="Ajouter un point a une matrice." alt="" coords="571,588,713,615"/>
-<area shape="rect" id="node18" href="$matrice_8c.html#a481576d3f075460eb19a693f9d8cc924" title="Creation d&#39;une nouvelle sous matrice." alt="" coords="761,588,879,615"/>
-<area shape="rect" id="node21" href="$matrice_8c.html#adca8dd6fa9a6344c509c7a0a4a3806b4" title="donne la distance entre 2 points de la matrice" alt="" coords="592,689,692,716"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,450,60,476"/>
+<area shape="rect" id="node2" href="$fnct__affichage_8c.html#aedb2b33ef2b081e69048f321459653f4" title="Fonction d&#39;affichage d&#39;aide lorsqu&#39;il y a une erreur d&#39;utilisation du programme." alt="" coords="109,95,237,122"/>
+<area shape="rect" id="node3" href="$main_8c.html#a3319d225054a969e823e364c48a8d0a4" title=" " alt="" coords="307,551,401,578"/>
+<area shape="rect" id="node7" href="$lectureTSPLIB_8c.html#a9f9e3c694319d74371adca5948038e4c" title="Libère un graphe allouée dynamiquement." alt="" coords="508,602,608,628"/>
+<area shape="rect" id="node22" href="$calc__distance_8c.html#ac6b7da1dc297b93e5316b68f0401d39d" title="Calcul la distance ATT entre points." alt="" coords="121,602,225,628"/>
+<area shape="rect" id="node23" href="$calc__distance_8c.html#a9535028b3a5d93b4a5d515e577d153a0" title="Calcul la distance euclidienne en 2D entre points." alt="" coords="108,652,237,679"/>
+<area shape="rect" id="node24" href="$calc__distance_8c.html#a7084007a4746b0ec66964145fa2a6029" title="Calcul la distance geographique entre points." alt="" coords="117,703,228,730"/>
+<area shape="rect" id="node25" href="$main_8c.html#a12ff7752fb5d742446efaa3d5b316376" title=" " alt="" coords="293,95,415,122"/>
+<area shape="rect" id="node27" href="$main_8c.html#a331963667831d5d909feb5a7d32e4060" title=" " alt="" coords="123,348,222,375"/>
+<area shape="rect" id="node32" href="$main_8c.html#ad0b8390d6edd245862f694eabb7e9a76" title=" " alt="" coords="305,146,403,172"/>
+<area shape="rect" id="node34" href="$main_8c.html#ac0f09cd02b79911b08c41d2fb28488f4" title=" " alt="" coords="295,44,413,71"/>
+<area shape="rect" id="node38" href="$main_8c.html#ac577e6ff8e5d830a9c3a340e6fe9d0f3" title=" " alt="" coords="295,196,413,223"/>
+<area shape="rect" id="node39" href="$lectureTSPLIB_8c.html#a1a174a6a279fe4ec3f75915c03e935cf" title="Lit un fichier TSPLIB et crée un Graphe." alt="" coords="121,551,224,578"/>
+<area shape="rect" id="node40" href="$main_8c.html#a5e609ab158c9c01739f607f5e316a823" title=" " alt="" coords="113,754,233,780"/>
+<area shape="rect" id="node41" href="$main_8c.html#ade48beabea1ddeccd53f1912a38dc882" title=" " alt="" coords="305,399,403,426"/>
+<area shape="rect" id="node42" href="$main_8c.html#acafeccefc81bef3f10519af7473b0646" title=" " alt="" coords="125,804,221,831"/>
+<area shape="rect" id="node4" href="$fnct__affichage_8c.html#a1eadb71bcc688effcb9ef828dc8c0e9f" title="Fonction d&#39;affichage des resultats." alt="" coords="490,298,626,324"/>
+<area shape="rect" id="node5" href="$lectureTSPLIB_8c.html#ada80ce156789590ff55aa2d2b602a403" title="Creer dynamiquement et renvoie la tournee canonique tu graphe passe en parametre." alt="" coords="471,348,645,375"/>
+<area shape="rect" id="node6" href="$lectureTSPLIB_8c.html#a3a73abb56d66138429ed41b21570f644" title="Fonction liberant l&#39;espace memoire de la Tournee donnee en parametre." alt="" coords="496,196,620,223"/>
+<area shape="rect" id="node8" href="$ctrl__c_8c.html#a6a3869251603ae4e569abadbd7dab11c" title="Gere le signal du controle&#45;C." alt="" coords="743,374,836,400"/>
+<area shape="rect" id="node9" href="$lectureTSPLIB_8c.html#a47a4df6ceebd46f6e9760ac6b38d3459" title="Convertit une tournee passee en parametre en chaine de caracteres formatee." alt="" coords="504,247,612,274"/>
+<area shape="rect" id="node10" href="$P1__fonctions_8c.html#a31c3abe8a7a1dba481e09eeff95a334a" title="Fonction appliquant l&#39;algorithme brute force au graphe passee en parametre et retournant la meilleure..." alt="" coords="500,551,616,578"/>
+<area shape="rect" id="node11" href="$matrice_8c.html#a663bbcfc009ba3bc74a2365df3d8b2c1" title="Creer une matrice en utilisant une graphe." alt="" coords="693,526,885,552"/>
+<area shape="rect" id="node14" href="$P1__fonctions_8c.html#a64de998d1f9805d140a28396b0d6b434" title=" " alt="" coords="759,576,820,603"/>
+<area shape="rect" id="node15" href="$P1__fonctions_8c.html#ac40f991f1b04df62aeb8cf28567f459b" title=" " alt="" coords="742,627,837,654"/>
+<area shape="rect" id="node17" href="$P1__fonctions_8c.html#ab55342fc4f408ac45acbb720cac0c54c" title=" " alt="" coords="702,678,877,704"/>
+<area shape="rect" id="node18" href="$matrice_8c.html#a1f28309512b940f720c96271d77d5878" title="detruie la matrice rentrer en parametre" alt="" coords="741,728,838,755"/>
+<area shape="rect" id="node19" href="$P1__fonctions_8c.html#aff899d842076b541dbd73b03bfa32d51" title=" " alt="" coords="720,779,859,806"/>
+<area shape="rect" id="node20" href="$P1__fonctions_8c.html#a686b473f131899518e7e686250c21fbf" title="Transforme une permutation (tableau d&#39;entiers) en une string qui est passee en parametre." alt="" coords="735,424,843,451"/>
+<area shape="rect" id="node21" href="$P1__fonctions_8c.html#a337119eece61f49a77bd5c3490d0c420" title=" " alt="" coords="702,475,877,502"/>
+<area shape="rect" id="node12" href="$matrice_8c.html#a6b166768f75cb194579c8ca6c6c285e9" title="Ajouter un point a une matrice." alt="" coords="933,526,1076,552"/>
+<area shape="rect" id="node13" href="$matrice_8c.html#a481576d3f075460eb19a693f9d8cc924" title="Creation d&#39;une nouvelle sous matrice." alt="" coords="1124,526,1241,552"/>
+<area shape="rect" id="node16" href="$matrice_8c.html#adca8dd6fa9a6344c509c7a0a4a3806b4" title="donne la distance entre 2 points de la matrice" alt="" coords="955,627,1055,654"/>
+<area shape="rect" id="node26" href="$calc__distance_8c.html#a941a8f33326e911c918d939714e6c82f" title="Calcul la distance totale d&#39;une tournee." alt="" coords="710,120,869,147"/>
+<area shape="rect" id="node28" href="$P3__evolution_8c.html#ac3f52f83c7850e6ee568be96aa15e0d0" title="Realise le croissemente trie de deux individues." alt="" coords="285,247,423,274"/>
+<area shape="rect" id="node29" href="$P3__evolution_8c.html#a9cb05755f1bf2b4bb4ee95927f902eab" title="Algorithe d&#39;evolution qui donne la meilleur trounee trouve." alt="" coords="299,500,409,527"/>
+<area shape="rect" id="node30" href="$P2__heuristiques_8c.html#ac68cd41de0d9ee9e9e2a0db12f58cbc7" title="calcule une tournee en utilisant l&#39;heuristique du randomWalk" alt="" coords="493,399,623,426"/>
+<area shape="rect" id="node31" href="$P2__heuristiques_8c.html#adcea422048582fdf63def161423a2b4f" title="vérifie si l&#39;entier n et dans le tableau tab" alt="" coords="767,234,812,260"/>
+<area shape="rect" id="node33" href="$P2__heuristiques_8c.html#a1159582d8c357dad8650993ebbc55a8a" title="calcule une tournee en utilisant l&#39;heuristique du nearest neighbour" alt="" coords="475,146,641,172"/>
+<area shape="rect" id="node35" href="$P2__2opt_8c.html#a86e13bfb2e11dcbadacdcb34d9f0c0b1" title="améliore une tournee déjà calculé" alt="" coords="519,44,597,71"/>
+<area shape="rect" id="node36" href="$P2__2opt_8c.html#a63323b5d4cfeb6f1d9671e900384151c" title=" " alt="" coords="738,7,841,34"/>
+<area shape="rect" id="node37" href="$P2__2opt_8c.html#ad63f04280d8249dbdcef72755a97e249" title=" " alt="" coords="702,58,877,84"/>
+<area shape="rect" id="node43" href="$fnct__affichage_8c.html#a1d0f8f3272ce4fe83344792a19375ff5" title="Fonction d&#39;affichage d&#39;aide pour l&#39;utilisation du programme." alt="" coords="295,779,413,806"/>
+<area shape="rect" id="node44" href="$main_8c.html#ae0eb641062cd47a8121127a4b350d0a2" title=" " alt="" coords="303,830,405,856"/>
 </map>

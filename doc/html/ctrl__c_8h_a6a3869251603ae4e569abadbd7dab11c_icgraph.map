@@ -1,5 +1,6 @@
 <map id="INThandler" name="INThandler">
-<area shape="rect" id="node1" title="Gere le signal du controle&#45;C." alt="" coords="272,5,365,32"/>
-<area shape="rect" id="node2" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,32"/>
-<area shape="rect" id="node3" href="$P1__fonctions_8c.html#a31c3abe8a7a1dba481e09eeff95a334a" title="Fonction appliquant l&#39;algorithme brute force au graphe passee en parametre et retournant la meilleure..." alt="" coords="108,31,224,57"/>
+<area shape="rect" id="node1" title="Gere le signal du controle&#45;C." alt="" coords="415,5,508,32"/>
+<area shape="rect" id="node2" href="$main_8c.html#a3319d225054a969e823e364c48a8d0a4" title=" " alt="" coords="108,5,203,32"/>
+<area shape="rect" id="node4" href="$P1__fonctions_8c.html#a31c3abe8a7a1dba481e09eeff95a334a" title="Fonction appliquant l&#39;algorithme brute force au graphe passee en parametre et retournant la meilleure..." alt="" coords="251,31,367,57"/>
+<area shape="rect" id="node3" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,32"/>
 </map>

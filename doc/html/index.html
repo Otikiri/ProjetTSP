@@ -80,24 +80,33 @@ Information generale</h1>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Utilisation</h1>
 <ul>
-<li><em><b>make</b></em> : dans le fichier de base (../ProjetTSP), va servir a creer l'exexutable du <a class="el" href="main_8c.html">main.c</a></li>
-<li><em><b>make clean</b></em> : dans le fichier de base (../ProjectTSP), va servir a nettoyer les fichiers creer par le make</li>
-<li>***./bin/tsp -f <u> FICHIER </u> [-c,-bf]*** pour faire executer le programme.</li>
-<li><em><b>source venv/bin/activate</b></em> pour activer le sous environnement python pour faire tester nos fonctions avec le code python </li>
+<li>*** make *** : dans le fichier de base (../ProjetTSP), va servir a creer l'exexutable du <a class="el" href="main_8c.html">main.c</a></li>
+<li>*** make clean *** : dans le fichier de base (../ProjectTSP), va servir a nettoyer les fichiers creer par le make</li>
+<li>*** ./bin/tsp -h *** : pour montrer comment utiliser ces algorithemes. Les fichiers de tests sont dans le repertoires tests pour l'instant ceux qui sont disponibltes sont : att5 , att10 , att15 , berlin5 , berlin52 , burma14 et burma5.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md4"></a>
 Partie 0</h1>
-<p>La partie 0 concerne l'implementation des differents fonctions necessaires pour manipuler les fichiers de test et des fonctions de calculs de distance.</p>
+<p>La partie 0 concerne l'implementation des differents fonctions necessaires pour manipuler les fichiers de test et des fonctions de calculs de distance.</p><ul>
+<li>*** ./bin/tsp -f <u> FICHIER </u> -c *** : pour faire executer calculer la tournee canonique.</li>
+</ul>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Partie 1</h1>
-<p>La partie 1 est l'implementation d'un algorithme de brute force pour resoudre le probleme. </p>
+<p>La partie 1 est l'implementation d'un algorithme de brute force pour resoudre le probleme.</p><ul>
+<li>*** ./bin/tsp -f <u> FICHIER </u> -m [bf] *** : pour faire exectuer l'algorithme de bruteforce.</li>
+</ul>
 <h1><a class="anchor" id="autotoc_md6"></a>
 Partie 2</h1>
-<p>//TODO </p>
+<p>La partie 2 concerne l'implementation des algorithmes Nearest Neighbour , Random Walk et 2opt.</p><ul>
+<li>***./bin/tsp -f <u> FICHIER </u> -m [nn]*** : pour faire exectuer l'algorithme du Nearest Neighbour.</li>
+<li>***./bin/tsp -f <u> FICHIER </u> -m [rw]*** : pour faire exectuer l'algorithme du Random Walk.</li>
+<li>***./bin/tsp -f <u> FICHIER </u> -m [2optnn]*** : pour faire exectuer l'algorithme du 2opt avec Nearest Neighbour.</li>
+<li>***./bin/tsp -f <u> FICHIER </u> -m [2optrw]*** : pour faire exectuer l'algorithme du 2opt avec Random Walk.</li>
+</ul>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Partie 3</h1>
-<p>//TODO <br  />
- </p>
+<ul>
+<li>***./bin/tsp -f <u> FICHIER </u> -m [ga,gadpx] &lt;nombre d'individu&gt; &lt;nombre de generation&gt; &lt;taux de mutation&gt;*** : </li>
+</ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

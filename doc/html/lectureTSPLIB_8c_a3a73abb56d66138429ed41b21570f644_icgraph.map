@@ -1,4 +1,12 @@
 <map id="detruireTournee" name="detruireTournee">
-<area shape="rect" id="node1" title="Fonction liberant l&#39;espace memoire de la Tournee donnee en parametre." alt="" coords="108,5,232,32"/>
-<area shape="rect" id="node2" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" id="node1" title="Fonction liberant l&#39;espace memoire de la Tournee donnee en parametre." alt="" coords="279,183,403,209"/>
+<area shape="rect" id="node2" href="$main_8c.html#a3319d225054a969e823e364c48a8d0a4" title=" " alt="" coords="122,5,217,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a12ff7752fb5d742446efaa3d5b316376" title=" " alt="" coords="109,56,230,83"/>
+<area shape="rect" id="node5" href="$main_8c.html#a331963667831d5d909feb5a7d32e4060" title=" " alt="" coords="120,107,219,133"/>
+<area shape="rect" id="node6" href="$main_8c.html#a073fe820dbfcf11a6ea3b5749dc7ecb1" title=" " alt="" coords="108,157,231,184"/>
+<area shape="rect" id="node7" href="$main_8c.html#ad0b8390d6edd245862f694eabb7e9a76" title=" " alt="" coords="120,208,219,235"/>
+<area shape="rect" id="node8" href="$main_8c.html#ac0f09cd02b79911b08c41d2fb28488f4" title=" " alt="" coords="110,259,229,285"/>
+<area shape="rect" id="node9" href="$main_8c.html#ac577e6ff8e5d830a9c3a340e6fe9d0f3" title=" " alt="" coords="110,309,229,336"/>
+<area shape="rect" id="node10" href="$main_8c.html#ade48beabea1ddeccd53f1912a38dc882" title=" " alt="" coords="120,360,219,387"/>
+<area shape="rect" id="node3" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,208,60,235"/>
 </map>

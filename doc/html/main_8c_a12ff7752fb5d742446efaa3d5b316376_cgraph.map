@@ -1,0 +1,8 @@
+<map id="canon_wrapper" name="canon_wrapper">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,127,133"/>
+<area shape="rect" id="node2" href="$fnct__affichage_8c.html#a1eadb71bcc688effcb9ef828dc8c0e9f" title="Fonction d&#39;affichage des resultats." alt="" coords="194,5,330,32"/>
+<area shape="rect" id="node3" href="$calc__distance_8c.html#a941a8f33326e911c918d939714e6c82f" title="Calcul la distance totale d&#39;une tournee." alt="" coords="183,56,341,83"/>
+<area shape="rect" id="node4" href="$lectureTSPLIB_8c.html#ada80ce156789590ff55aa2d2b602a403" title="Creer dynamiquement et renvoie la tournee canonique tu graphe passe en parametre." alt="" coords="175,107,349,133"/>
+<area shape="rect" id="node5" href="$lectureTSPLIB_8c.html#a3a73abb56d66138429ed41b21570f644" title="Fonction liberant l&#39;espace memoire de la Tournee donnee en parametre." alt="" coords="200,157,324,184"/>
+<area shape="rect" id="node6" href="$lectureTSPLIB_8c.html#a47a4df6ceebd46f6e9760ac6b38d3459" title="Convertit une tournee passee en parametre en chaine de caracteres formatee." alt="" coords="208,208,316,235"/>
+</map>

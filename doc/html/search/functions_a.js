@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tostringarray_127',['toStringArray',['../lectureTSPLIB_8c.html#a47a4df6ceebd46f6e9760ac6b38d3459',1,'toStringArray(Tournee T):&#160;lectureTSPLIB.c'],['../lectureTSPLIB_8h.html#a47a4df6ceebd46f6e9760ac6b38d3459',1,'toStringArray(Tournee T):&#160;lectureTSPLIB.c']]],
-  ['tour_5flength_5ffrom_5fperm_128',['tour_length_from_perm',['../P1__fonctions_8c.html#a337119eece61f49a77bd5c3490d0c420',1,'P1_fonctions.c']]],
-  ['tsp_5fbruteforce_129',['tsp_bruteforce',['../P1__fonctions_8c.html#a31c3abe8a7a1dba481e09eeff95a334a',1,'tsp_bruteforce(const Graphe *g, DistanceFun f, bool faire_matrice_distance, Tournee *outBest, double *outBestLen, Tournee *outWorst, double *outWorstLen):&#160;P1_fonctions.c'],['../P1__fonctions_8h.html#a31c3abe8a7a1dba481e09eeff95a334a',1,'tsp_bruteforce(const Graphe *g, DistanceFun f, bool faire_matrice_distance, Tournee *outBest, double *outBestLen, Tournee *outWorst, double *outWorstLen):&#160;P1_fonctions.c']]]
+  ['permtostring_178',['permToString',['../P1__fonctions_8c.html#a686b473f131899518e7e686250c21fbf',1,'P1_fonctions.c']]],
+  ['printmatrice_179',['printMatrice',['../matrice_8c.html#a005d55f7fd492119bf11e1b604d4398f',1,'printMatrice(const Matrice mat):&#160;matrice.c'],['../matrice_8h.html#a005d55f7fd492119bf11e1b604d4398f',1,'printMatrice(const Matrice mat):&#160;matrice.c']]]
 ];

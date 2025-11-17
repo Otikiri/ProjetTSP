@@ -1,0 +1,5 @@
+<map id="tsp_randomWalk" name="tsp_randomWalk">
+<area shape="rect" id="node1" title="calcule une tournee en utilisant l&#39;heuristique du randomWalk" alt="" coords="5,31,136,57"/>
+<area shape="rect" id="node2" href="$calc__distance_8c.html#a941a8f33326e911c918d939714e6c82f" title="Calcul la distance totale d&#39;une tournee." alt="" coords="184,5,343,32"/>
+<area shape="rect" id="node3" href="$P2__heuristiques_8c.html#adcea422048582fdf63def161423a2b4f" title="vérifie si l&#39;entier n et dans le tableau tab" alt="" coords="241,56,286,83"/>
+</map>

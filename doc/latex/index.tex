@@ -11,13 +11,26 @@
 Ce projet se base sur la problematique du \char`\"{}\+Travelling Saleman Probleme\char`\"{} ou TSP. C\textquotesingle{}est un projet pedagogique pour l\textquotesingle{}UE Projet Avance de l\textquotesingle{}Universite de Toulouse (formellement Universite Toulouse III , Paul SABATIER). Il contient plusieurs algorithme de calcul qui sont explicites dans les differentes parties.\hypertarget{index_autotoc_md3}{}\doxysection{Utilisation}\label{index_autotoc_md3}
 
 \begin{DoxyItemize}
-\item {\itshape {\bfseries{make}}} \+: dans le fichier de base (../\+Projet\+TSP), va servir a creer l\textquotesingle{}exexutable du \mbox{\hyperlink{main_8c}{main.\+c}}
-\item {\itshape {\bfseries{make clean}}} \+: dans le fichier de base (../\+Project\+TSP), va servir a nettoyer les fichiers creer par le make
-\item $\ast$$\ast$$\ast$./bin/tsp -\/f \uline{ FICHIER } \mbox{[}-\/c,-\/bf\mbox{]}$\ast$$\ast$$\ast$ pour faire executer le programme.
-\item {\itshape {\bfseries{source venv/bin/activate}}} pour activer le sous environnement python pour faire tester nos fonctions avec le code python 
+\item $\ast$$\ast$$\ast$ make $\ast$$\ast$$\ast$ \+: dans le fichier de base (../\+Projet\+TSP), va servir a creer l\textquotesingle{}exexutable du \mbox{\hyperlink{main_8c}{main.\+c}}
+\item $\ast$$\ast$$\ast$ make clean $\ast$$\ast$$\ast$ \+: dans le fichier de base (../\+Project\+TSP), va servir a nettoyer les fichiers creer par le make
+\item $\ast$$\ast$$\ast$ ./bin/tsp -\/h $\ast$$\ast$$\ast$ \+: pour montrer comment utiliser ces algorithemes. Les fichiers de tests sont dans le repertoires tests pour l\textquotesingle{}instant ceux qui sont disponibltes sont \+: att5 , att10 , att15 , berlin5 , berlin52 , burma14 et burma5.
 \end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\doxysection{Partie 0}\label{index_autotoc_md4}
-La partie 0 concerne l\textquotesingle{}implementation des differents fonctions necessaires pour manipuler les fichiers de test et des fonctions de calculs de distance.\hypertarget{index_autotoc_md5}{}\doxysection{Partie 1}\label{index_autotoc_md5}
-La partie 1 est l\textquotesingle{}implementation d\textquotesingle{}un algorithme de brute force pour resoudre le probleme. \hypertarget{index_autotoc_md6}{}\doxysection{Partie 2}\label{index_autotoc_md6}
-//\+TODO \hypertarget{index_autotoc_md7}{}\doxysection{Partie 3}\label{index_autotoc_md7}
-//\+TODO ~\newline
- 
+La partie 0 concerne l\textquotesingle{}implementation des differents fonctions necessaires pour manipuler les fichiers de test et des fonctions de calculs de distance.
+\begin{DoxyItemize}
+\item $\ast$$\ast$$\ast$ ./bin/tsp -\/f \uline{ FICHIER } -\/c $\ast$$\ast$$\ast$ \+: pour faire executer calculer la tournee canonique.
+\end{DoxyItemize}\hypertarget{index_autotoc_md5}{}\doxysection{Partie 1}\label{index_autotoc_md5}
+La partie 1 est l\textquotesingle{}implementation d\textquotesingle{}un algorithme de brute force pour resoudre le probleme.
+\begin{DoxyItemize}
+\item $\ast$$\ast$$\ast$ ./bin/tsp -\/f \uline{ FICHIER } -\/m \mbox{[}bf\mbox{]} $\ast$$\ast$$\ast$ \+: pour faire exectuer l\textquotesingle{}algorithme de bruteforce.
+\end{DoxyItemize}\hypertarget{index_autotoc_md6}{}\doxysection{Partie 2}\label{index_autotoc_md6}
+La partie 2 concerne l\textquotesingle{}implementation des algorithmes Nearest Neighbour , Random Walk et 2opt.
+\begin{DoxyItemize}
+\item $\ast$$\ast$$\ast$./bin/tsp -\/f \uline{ FICHIER } -\/m \mbox{[}nn\mbox{]}$\ast$$\ast$$\ast$ \+: pour faire exectuer l\textquotesingle{}algorithme du Nearest Neighbour.
+\item $\ast$$\ast$$\ast$./bin/tsp -\/f \uline{ FICHIER } -\/m \mbox{[}rw\mbox{]}$\ast$$\ast$$\ast$ \+: pour faire exectuer l\textquotesingle{}algorithme du Random Walk.
+\item $\ast$$\ast$$\ast$./bin/tsp -\/f \uline{ FICHIER } -\/m \mbox{[}2optnn\mbox{]}$\ast$$\ast$$\ast$ \+: pour faire exectuer l\textquotesingle{}algorithme du 2opt avec Nearest Neighbour.
+\item $\ast$$\ast$$\ast$./bin/tsp -\/f \uline{ FICHIER } -\/m \mbox{[}2optrw\mbox{]}$\ast$$\ast$$\ast$ \+: pour faire exectuer l\textquotesingle{}algorithme du 2opt avec Random Walk.
+\end{DoxyItemize}\hypertarget{index_autotoc_md7}{}\doxysection{Partie 3}\label{index_autotoc_md7}
+
+\begin{DoxyItemize}
+\item $\ast$$\ast$$\ast$./bin/tsp -\/f \uline{ FICHIER } -\/m \mbox{[}ga,gadpx\mbox{]} $<$nombre d\textquotesingle{}individu$>$ $<$nombre de generation$>$ $<$taux de mutation$>$$\ast$$\ast$$\ast$ \+: 
+\end{DoxyItemize}

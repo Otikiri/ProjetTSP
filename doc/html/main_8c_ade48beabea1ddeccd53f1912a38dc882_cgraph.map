@@ -1,0 +1,10 @@
+<map id="rw_wrapper" name="rw_wrapper">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,104,133"/>
+<area shape="rect" id="node2" href="$fnct__affichage_8c.html#a1eadb71bcc688effcb9ef828dc8c0e9f" title="Fonction d&#39;affichage des resultats." alt="" coords="171,5,307,32"/>
+<area shape="rect" id="node3" href="$lectureTSPLIB_8c.html#ada80ce156789590ff55aa2d2b602a403" title="Creer dynamiquement et renvoie la tournee canonique tu graphe passe en parametre." alt="" coords="152,56,327,83"/>
+<area shape="rect" id="node4" href="$lectureTSPLIB_8c.html#a3a73abb56d66138429ed41b21570f644" title="Fonction liberant l&#39;espace memoire de la Tournee donnee en parametre." alt="" coords="177,107,301,133"/>
+<area shape="rect" id="node5" href="$lectureTSPLIB_8c.html#a47a4df6ceebd46f6e9760ac6b38d3459" title="Convertit une tournee passee en parametre en chaine de caracteres formatee." alt="" coords="185,157,293,184"/>
+<area shape="rect" id="node6" href="$P2__heuristiques_8c.html#ac68cd41de0d9ee9e9e2a0db12f58cbc7" title="calcule une tournee en utilisant l&#39;heuristique du randomWalk" alt="" coords="174,208,305,235"/>
+<area shape="rect" id="node7" href="$calc__distance_8c.html#a941a8f33326e911c918d939714e6c82f" title="Calcul la distance totale d&#39;une tournee." alt="" coords="375,183,533,209"/>
+<area shape="rect" id="node8" href="$P2__heuristiques_8c.html#adcea422048582fdf63def161423a2b4f" title="vérifie si l&#39;entier n et dans le tableau tab" alt="" coords="431,233,477,260"/>
+</map>

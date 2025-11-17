@@ -1,0 +1,17 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,208,60,235"/>
+<area shape="rect" id="node2" href="$fnct__affichage_8c.html#a1eadb71bcc688effcb9ef828dc8c0e9f" title="Fonction d&#39;affichage des resultats." alt="" coords="127,5,263,32"/>
+<area shape="rect" id="node3" href="$calc__distance_8c.html#ac6b7da1dc297b93e5316b68f0401d39d" title="Calcul la distance ATT entre points." alt="" coords="143,56,247,83"/>
+<area shape="rect" id="node4" href="$calc__distance_8c.html#a9535028b3a5d93b4a5d515e577d153a0" title="Calcul la distance euclidienne en 2D entre points." alt="" coords="131,107,260,133"/>
+<area shape="rect" id="node5" href="$calc__distance_8c.html#a7084007a4746b0ec66964145fa2a6029" title="Calcul la distance geographique entre points." alt="" coords="140,157,251,184"/>
+<area shape="rect" id="node6" href="$lectureTSPLIB_8c.html#ada80ce156789590ff55aa2d2b602a403" title="Creer dynamiquement et renvoie la tournee canonique tu graphe passe en parametre." alt="" coords="108,208,283,235"/>
+<area shape="rect" id="node7" href="$lectureTSPLIB_8c.html#a1a174a6a279fe4ec3f75915c03e935cf" title="Lit un fichier TSPLIB et crée un Graphe." alt="" coords="144,259,247,285"/>
+<area shape="rect" id="node9" href="$lectureTSPLIB_8c.html#a47a4df6ceebd46f6e9760ac6b38d3459" title="Convertit une tournee passee en parametre en chaine de caracteres formatee." alt="" coords="141,309,249,336"/>
+<area shape="rect" id="node10" href="$P2__2opt_8c.html#a86e13bfb2e11dcbadacdcb34d9f0c0b1" title="améliore une tournee déjà calculé" alt="" coords="156,360,235,387"/>
+<area shape="rect" id="node14" href="$P2__heuristiques_8c.html#a1159582d8c357dad8650993ebbc55a8a" title="calcule une tournee en utilisant l&#39;heuristique du nearest neighbour" alt="" coords="113,411,278,437"/>
+<area shape="rect" id="node8" href="$lectureTSPLIB_8c.html#a9f9e3c694319d74371adca5948038e4c" title="Libère un graphe allouée dynamiquement." alt="" coords="368,259,468,285"/>
+<area shape="rect" id="node11" href="$calc__distance_8c.html#a941a8f33326e911c918d939714e6c82f" title="Calcul la distance totale d&#39;une tournee." alt="" coords="339,411,497,437"/>
+<area shape="rect" id="node12" href="$P2__2opt_8c.html#a63323b5d4cfeb6f1d9671e900384151c" title=" " alt="" coords="367,309,469,336"/>
+<area shape="rect" id="node13" href="$P2__2opt_8c.html#ad63f04280d8249dbdcef72755a97e249" title=" " alt="" coords="331,360,505,387"/>
+<area shape="rect" id="node15" href="$P2__heuristiques_8c.html#adcea422048582fdf63def161423a2b4f" title="vérifie si l&#39;entier n et dans le tableau tab" alt="" coords="395,461,441,488"/>
+</map>

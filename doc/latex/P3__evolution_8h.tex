@@ -1,0 +1,179 @@
+\hypertarget{P3__evolution_8h}{}\doxysection{src/\+P3\+\_\+evolution.h File Reference}
+\label{P3__evolution_8h}\index{src/P3\_evolution.h@{src/P3\_evolution.h}}
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+Include dependency graph for P3\+\_\+evolution.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{P3__evolution_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{P3__evolution_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{P3__evolution_8h_a20a36bdd967ba53ce5340c13c0b33f52}{crossover\+Fun}}) (int $\ast$parent1, int $\ast$parent2, int $\ast$child, int n, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} dist, const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$graphe)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{P3__evolution_8h_ac3f52f83c7850e6ee568be96aa15e0d0}{ordered\+Crossover}} (int $\ast$parent1, int $\ast$parent2, int $\ast$child, int n, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} dist, const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$graphe)
+\begin{DoxyCompactList}\small\item\em Realise le croissemente trie de deux individues. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{P3__evolution_8h_a1b8149cc680074e14afa298d99b85ca6}{dpx\+\_\+crossover}} (int $\ast$p1, int $\ast$p2, int $\ast$child, int n, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} dist, const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$graphe)
+\begin{DoxyCompactList}\small\item\em Realise le croissemente DPX de deux individues. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{P3__evolution_8h_a9cb05755f1bf2b4bb4ee95927f902eab}{tsp\+\_\+evolution}} (int population\+\_\+size, int generations, double mutation\+\_\+rate, int tournament\+\_\+size, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} distance, \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$graphe, \mbox{\hyperlink{P3__evolution_8h_a20a36bdd967ba53ce5340c13c0b33f52}{crossover\+Fun}} crossover, \mbox{\hyperlink{structTournee}{Tournee}} $\ast$out\+Best, double $\ast$out\+Best\+Len)
+\begin{DoxyCompactList}\small\item\em Algorithe d\textquotesingle{}evolution qui donne la meilleur trounee trouve. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{P3__evolution_8h_a20a36bdd967ba53ce5340c13c0b33f52}\label{P3__evolution_8h_a20a36bdd967ba53ce5340c13c0b33f52}} 
+\index{P3\_evolution.h@{P3\_evolution.h}!crossoverFun@{crossoverFun}}
+\index{crossoverFun@{crossoverFun}!P3\_evolution.h@{P3\_evolution.h}}
+\doxysubsubsection{\texorpdfstring{crossoverFun}{crossoverFun}}
+{\footnotesize\ttfamily typedef void($\ast$ crossover\+Fun) (int $\ast$parent1, int $\ast$parent2, int $\ast$child, int n, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} dist, const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$graphe)}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{P3__evolution_8h_a1b8149cc680074e14afa298d99b85ca6}\label{P3__evolution_8h_a1b8149cc680074e14afa298d99b85ca6}} 
+\index{P3\_evolution.h@{P3\_evolution.h}!dpx\_crossover@{dpx\_crossover}}
+\index{dpx\_crossover@{dpx\_crossover}!P3\_evolution.h@{P3\_evolution.h}}
+\doxysubsubsection{\texorpdfstring{dpx\_crossover()}{dpx\_crossover()}}
+{\footnotesize\ttfamily void dpx\+\_\+crossover (\begin{DoxyParamCaption}\item[{int $\ast$}]{p1,  }\item[{int $\ast$}]{p2,  }\item[{int $\ast$}]{child,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{dist,  }\item[{const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{graphe }\end{DoxyParamCaption})}
+
+
+
+Realise le croissemente DPX de deux individues. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & un des parent pour le croisement \\
+\hline
+{\em p2} & un des parent pour le croisement \\
+\hline
+{\em child} & resultat du croissement DPX \\
+\hline
+{\em n} & taille des individues (meme taille pour le nb de connexions) \\
+\hline
+{\em dist} & fonction de distance utilise \\
+\hline
+{\em graphe} & graphe d\textquotesingle{}un fichier tsp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 si tout se passe bien -\/1 en cas d\textquotesingle{}erreur
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & un des parent pour le coisement \\
+\hline
+{\em p2} & un des parent pour le coisement \\
+\hline
+{\em child} & resultat du croissement DPX \\
+\hline
+{\em n} & taille des individues (meme taille pour le nb de connexions) \\
+\hline
+{\em dist} & fonction de distance utilise \\
+\hline
+{\em graphe} & graphe d\textquotesingle{}un fichier tsp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 si tout se passe bien -\/1 en cas d\textquotesingle{}erreur 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{P3__evolution_8h_a1b8149cc680074e14afa298d99b85ca6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{P3__evolution_8h_ac3f52f83c7850e6ee568be96aa15e0d0}\label{P3__evolution_8h_ac3f52f83c7850e6ee568be96aa15e0d0}} 
+\index{P3\_evolution.h@{P3\_evolution.h}!orderedCrossover@{orderedCrossover}}
+\index{orderedCrossover@{orderedCrossover}!P3\_evolution.h@{P3\_evolution.h}}
+\doxysubsubsection{\texorpdfstring{orderedCrossover()}{orderedCrossover()}}
+{\footnotesize\ttfamily void ordered\+Crossover (\begin{DoxyParamCaption}\item[{int $\ast$}]{parent1,  }\item[{int $\ast$}]{parent2,  }\item[{int $\ast$}]{child,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{dist,  }\item[{const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{graphe }\end{DoxyParamCaption})}
+
+
+
+Realise le croissemente trie de deux individues. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent1} & le premier individue parent pour faire le croisemente \\
+\hline
+{\em parent2} & le deuxieme individue parent pour faire le croisement \\
+\hline
+{\em child} & pointeur qui donnera le resulta du croissement \\
+\hline
+{\em n} & taille des individues \\
+\hline
+{\em dist} & fonction de distance qui ne sera pas utilise (ici pour accomplire les requis du type pour la fonction de croissement) \\
+\hline
+{\em graphe} & graphe d\textquotesingle{}un fichier tsp pas utilise \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 si tout se passe bien -\/1 en cas d\textquotesingle{}erreur 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{P3__evolution_8h_ac3f52f83c7850e6ee568be96aa15e0d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{P3__evolution_8h_a9cb05755f1bf2b4bb4ee95927f902eab}\label{P3__evolution_8h_a9cb05755f1bf2b4bb4ee95927f902eab}} 
+\index{P3\_evolution.h@{P3\_evolution.h}!tsp\_evolution@{tsp\_evolution}}
+\index{tsp\_evolution@{tsp\_evolution}!P3\_evolution.h@{P3\_evolution.h}}
+\doxysubsubsection{\texorpdfstring{tsp\_evolution()}{tsp\_evolution()}}
+{\footnotesize\ttfamily int tsp\+\_\+evolution (\begin{DoxyParamCaption}\item[{int}]{population\+\_\+size,  }\item[{int}]{generations,  }\item[{double}]{mutation\+\_\+rate,  }\item[{int}]{tournament\+\_\+size,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{distance,  }\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{P3__evolution_8h_a20a36bdd967ba53ce5340c13c0b33f52}{crossover\+Fun}}}]{crossover,  }\item[{\mbox{\hyperlink{structTournee}{Tournee}} $\ast$}]{out\+Best,  }\item[{double $\ast$}]{out\+Best\+Len }\end{DoxyParamCaption})}
+
+
+
+Algorithe d\textquotesingle{}evolution qui donne la meilleur trounee trouve. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population\+\_\+size} & taille de la population genere \\
+\hline
+{\em generations} & nb de fois l\textquotesingle{}algo evolutif est utilise \\
+\hline
+{\em mutation\+\_\+rate} & probabilite qu\textquotesingle{}une mutation apparait dans un individue \\
+\hline
+{\em trournament\+\_\+size} & taille du tournoi effectue \\
+\hline
+{\em distance} & fonction de distance utilise \\
+\hline
+{\em graphe} & graphe d\textquotesingle{}un fichier tsp \\
+\hline
+{\em crossover} & le croissement effectue par l\textquotesingle{}algorithme\\
+\hline
+{\em out\+Best} & Pointeur sur la tournee ou l\textquotesingle{}on veut stocker la meilleur tournee \\
+\hline
+{\em out\+Best\+Len} & Pointeur sure le double ou l\textquotesingle{}on veut stocker la longueur de la meilleur tournee \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 si tout se passe bien -\/1 en cas d\textquotesingle{}erreur 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{P3__evolution_8h_a9cb05755f1bf2b4bb4ee95927f902eab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{P3__evolution_8h_a9cb05755f1bf2b4bb4ee95927f902eab_icgraph}
+\end{center}
+\end{figure}

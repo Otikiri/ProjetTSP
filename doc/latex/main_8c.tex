@@ -8,34 +8,316 @@
 {\ttfamily \#include $<$time.\+h$>$}\newline
 {\ttfamily \#include $<$signal.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}ctrl\+\_\+c.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}P1\+\_\+fonctions.\+h\char`\"{}}\newline
-Include dependency graph for main.\+c\+:
-\nopagebreak
+Include dependency graph for main.\+c\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{main_8c__incl}
 \end{center}
 \end{figure}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44fae}{Algo\+\_\+type}} \{ \newline
+\mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44faeac8b91aa11cffb47da6954bc5e76d60d9}{CANONICAL}}
+, \mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44faea4ed30f79e62fd681ecd1e71004be644b}{BRUTEFORCE}}
+, \mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44faeaa0a6d23f8b8412b029f415a9ebbac3cf}{NEAREST\+\_\+\+NEIGHBOUR}}
+, \mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44faea8ac46db1738de9f5fab7117d7782ca87}{RANDOM\+\_\+\+WALK}}
+, \newline
+\mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44faeacac7973780c4162dc683b704593da184}{OPT\+\_\+\+NN}}
+, \mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44faea73f64d521d7a16d6a7339325e5bba3eb}{OPT\+\_\+\+RW}}
+, \mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44faea6f6d94858a61a54ee684daf5c4fc96bf}{GA}}
+, \mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44faeaf60fb2280a3b0c21f25f8f4e500bdf31}{GADPX}}
+, \newline
+\mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44faea6ce26a62afab55d7606ad4e92428b30c}{UNKNOWN}}
+ \}
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_ae0eb641062cd47a8121127a4b350d0a2}{check\+Values}} (char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{main_8c_acafeccefc81bef3f10519af7473b0646}{test\+\_\+entree}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44fae}{Algo\+\_\+type}} \mbox{\hyperlink{main_8c_a5e609ab158c9c01739f607f5e316a823}{return\+Algo\+Type}} (char $\ast$ch\+Read)
+\item 
+void \mbox{\hyperlink{main_8c_a12ff7752fb5d742446efaa3d5b316376}{canon\+\_\+wrapper}} (\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$gr, char $\ast$ch\+Read, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} calc\+\_\+dist)
+\item 
+void \mbox{\hyperlink{main_8c_a3319d225054a969e823e364c48a8d0a4}{bf\+\_\+wrapper}} (\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$gr, char $\ast$ch\+Read, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} calc\+\_\+dist)
+\item 
+void \mbox{\hyperlink{main_8c_ad0b8390d6edd245862f694eabb7e9a76}{nn\+\_\+wrapper}} (\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$gr, char $\ast$ch\+Read, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} calc\+\_\+dist)
+\item 
+void \mbox{\hyperlink{main_8c_ade48beabea1ddeccd53f1912a38dc882}{rw\+\_\+wrapper}} (\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$gr, char $\ast$ch\+Read, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} calc\+\_\+dist)
+\item 
+void \mbox{\hyperlink{main_8c_ac0f09cd02b79911b08c41d2fb28488f4}{optnn\+\_\+wrapper}} (\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$gr, char $\ast$ch\+Read, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} calc\+\_\+dist)
+\item 
+void \mbox{\hyperlink{main_8c_ac577e6ff8e5d830a9c3a340e6fe9d0f3}{optrw\+\_\+wrapper}} (\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$gr, char $\ast$ch\+Read, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} calc\+\_\+dist)
+\item 
+void \mbox{\hyperlink{main_8c_a331963667831d5d909feb5a7d32e4060}{ga\+\_\+wrapper}} (\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$gr, char $\ast$ch\+Read, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} calc\+\_\+dist, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{main_8c_a073fe820dbfcf11a6ea3b5749dc7ecb1}{gadpx\+\_\+wrapper}} (\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$gr, char $\ast$ch\+Read, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} calc\+\_\+dist, char $\ast$argv\mbox{[}$\,$\mbox{]})
 \item 
 int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{main_8c_adb18ec2b9ed1925cf043c9787ea44fae}\label{main_8c_adb18ec2b9ed1925cf043c9787ea44fae}} 
+\index{main.c@{main.c}!Algo\_type@{Algo\_type}}
+\index{Algo\_type@{Algo\_type}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Algo\_type}{Algo\_type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44fae}{Algo\+\_\+type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CANONICAL@{CANONICAL}!main.c@{main.c}}\index{main.c@{main.c}!CANONICAL@{CANONICAL}}}\mbox{\Hypertarget{main_8c_adb18ec2b9ed1925cf043c9787ea44faeac8b91aa11cffb47da6954bc5e76d60d9}\label{main_8c_adb18ec2b9ed1925cf043c9787ea44faeac8b91aa11cffb47da6954bc5e76d60d9}} 
+CANONICAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BRUTEFORCE@{BRUTEFORCE}!main.c@{main.c}}\index{main.c@{main.c}!BRUTEFORCE@{BRUTEFORCE}}}\mbox{\Hypertarget{main_8c_adb18ec2b9ed1925cf043c9787ea44faea4ed30f79e62fd681ecd1e71004be644b}\label{main_8c_adb18ec2b9ed1925cf043c9787ea44faea4ed30f79e62fd681ecd1e71004be644b}} 
+BRUTEFORCE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEAREST\_NEIGHBOUR@{NEAREST\_NEIGHBOUR}!main.c@{main.c}}\index{main.c@{main.c}!NEAREST\_NEIGHBOUR@{NEAREST\_NEIGHBOUR}}}\mbox{\Hypertarget{main_8c_adb18ec2b9ed1925cf043c9787ea44faeaa0a6d23f8b8412b029f415a9ebbac3cf}\label{main_8c_adb18ec2b9ed1925cf043c9787ea44faeaa0a6d23f8b8412b029f415a9ebbac3cf}} 
+NEAREST\+\_\+\+NEIGHBOUR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RANDOM\_WALK@{RANDOM\_WALK}!main.c@{main.c}}\index{main.c@{main.c}!RANDOM\_WALK@{RANDOM\_WALK}}}\mbox{\Hypertarget{main_8c_adb18ec2b9ed1925cf043c9787ea44faea8ac46db1738de9f5fab7117d7782ca87}\label{main_8c_adb18ec2b9ed1925cf043c9787ea44faea8ac46db1738de9f5fab7117d7782ca87}} 
+RANDOM\+\_\+\+WALK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OPT\_NN@{OPT\_NN}!main.c@{main.c}}\index{main.c@{main.c}!OPT\_NN@{OPT\_NN}}}\mbox{\Hypertarget{main_8c_adb18ec2b9ed1925cf043c9787ea44faeacac7973780c4162dc683b704593da184}\label{main_8c_adb18ec2b9ed1925cf043c9787ea44faeacac7973780c4162dc683b704593da184}} 
+OPT\+\_\+\+NN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OPT\_RW@{OPT\_RW}!main.c@{main.c}}\index{main.c@{main.c}!OPT\_RW@{OPT\_RW}}}\mbox{\Hypertarget{main_8c_adb18ec2b9ed1925cf043c9787ea44faea73f64d521d7a16d6a7339325e5bba3eb}\label{main_8c_adb18ec2b9ed1925cf043c9787ea44faea73f64d521d7a16d6a7339325e5bba3eb}} 
+OPT\+\_\+\+RW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GA@{GA}!main.c@{main.c}}\index{main.c@{main.c}!GA@{GA}}}\mbox{\Hypertarget{main_8c_adb18ec2b9ed1925cf043c9787ea44faea6f6d94858a61a54ee684daf5c4fc96bf}\label{main_8c_adb18ec2b9ed1925cf043c9787ea44faea6f6d94858a61a54ee684daf5c4fc96bf}} 
+GA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GADPX@{GADPX}!main.c@{main.c}}\index{main.c@{main.c}!GADPX@{GADPX}}}\mbox{\Hypertarget{main_8c_adb18ec2b9ed1925cf043c9787ea44faeaf60fb2280a3b0c21f25f8f4e500bdf31}\label{main_8c_adb18ec2b9ed1925cf043c9787ea44faeaf60fb2280a3b0c21f25f8f4e500bdf31}} 
+GADPX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNKNOWN@{UNKNOWN}!main.c@{main.c}}\index{main.c@{main.c}!UNKNOWN@{UNKNOWN}}}\mbox{\Hypertarget{main_8c_adb18ec2b9ed1925cf043c9787ea44faea6ce26a62afab55d7606ad4e92428b30c}\label{main_8c_adb18ec2b9ed1925cf043c9787ea44faea6ce26a62afab55d7606ad4e92428b30c}} 
+UNKNOWN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a3319d225054a969e823e364c48a8d0a4}\label{main_8c_a3319d225054a969e823e364c48a8d0a4}} 
+\index{main.c@{main.c}!bf\_wrapper@{bf\_wrapper}}
+\index{bf\_wrapper@{bf\_wrapper}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{bf\_wrapper()}{bf\_wrapper()}}
+{\footnotesize\ttfamily void bf\+\_\+wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{gr,  }\item[{char $\ast$}]{ch\+Read,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{calc\+\_\+dist }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a3319d225054a969e823e364c48a8d0a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{main_8c_a3319d225054a969e823e364c48a8d0a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a12ff7752fb5d742446efaa3d5b316376}\label{main_8c_a12ff7752fb5d742446efaa3d5b316376}} 
+\index{main.c@{main.c}!canon\_wrapper@{canon\_wrapper}}
+\index{canon\_wrapper@{canon\_wrapper}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{canon\_wrapper()}{canon\_wrapper()}}
+{\footnotesize\ttfamily void canon\+\_\+wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{gr,  }\item[{char $\ast$}]{ch\+Read,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{calc\+\_\+dist }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{main_8c_a12ff7752fb5d742446efaa3d5b316376_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{main_8c_a12ff7752fb5d742446efaa3d5b316376_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_ae0eb641062cd47a8121127a4b350d0a2}\label{main_8c_ae0eb641062cd47a8121127a4b350d0a2}} 
+\index{main.c@{main.c}!checkValues@{checkValues}}
+\index{checkValues@{checkValues}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{checkValues()}{checkValues()}}
+{\footnotesize\ttfamily int check\+Values (\begin{DoxyParamCaption}\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{main_8c_ae0eb641062cd47a8121127a4b350d0a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a331963667831d5d909feb5a7d32e4060}\label{main_8c_a331963667831d5d909feb5a7d32e4060}} 
+\index{main.c@{main.c}!ga\_wrapper@{ga\_wrapper}}
+\index{ga\_wrapper@{ga\_wrapper}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ga\_wrapper()}{ga\_wrapper()}}
+{\footnotesize\ttfamily void ga\+\_\+wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{gr,  }\item[{char $\ast$}]{ch\+Read,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{calc\+\_\+dist,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a331963667831d5d909feb5a7d32e4060_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{main_8c_a331963667831d5d909feb5a7d32e4060_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a073fe820dbfcf11a6ea3b5749dc7ecb1}\label{main_8c_a073fe820dbfcf11a6ea3b5749dc7ecb1}} 
+\index{main.c@{main.c}!gadpx\_wrapper@{gadpx\_wrapper}}
+\index{gadpx\_wrapper@{gadpx\_wrapper}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{gadpx\_wrapper()}{gadpx\_wrapper()}}
+{\footnotesize\ttfamily void gadpx\+\_\+wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{gr,  }\item[{char $\ast$}]{ch\+Read,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{calc\+\_\+dist,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a073fe820dbfcf11a6ea3b5749dc7ecb1_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
 \index{main.c@{main.c}!main@{main}}
 \index{main@{main}!main.c@{main.c}}
 \doxysubsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{main_8c_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_ad0b8390d6edd245862f694eabb7e9a76}\label{main_8c_ad0b8390d6edd245862f694eabb7e9a76}} 
+\index{main.c@{main.c}!nn\_wrapper@{nn\_wrapper}}
+\index{nn\_wrapper@{nn\_wrapper}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{nn\_wrapper()}{nn\_wrapper()}}
+{\footnotesize\ttfamily void nn\+\_\+wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{gr,  }\item[{char $\ast$}]{ch\+Read,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{calc\+\_\+dist }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_ad0b8390d6edd245862f694eabb7e9a76_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{main_8c_ad0b8390d6edd245862f694eabb7e9a76_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_ac0f09cd02b79911b08c41d2fb28488f4}\label{main_8c_ac0f09cd02b79911b08c41d2fb28488f4}} 
+\index{main.c@{main.c}!optnn\_wrapper@{optnn\_wrapper}}
+\index{optnn\_wrapper@{optnn\_wrapper}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{optnn\_wrapper()}{optnn\_wrapper()}}
+{\footnotesize\ttfamily void optnn\+\_\+wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{gr,  }\item[{char $\ast$}]{ch\+Read,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{calc\+\_\+dist }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_ac0f09cd02b79911b08c41d2fb28488f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{main_8c_ac0f09cd02b79911b08c41d2fb28488f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_ac577e6ff8e5d830a9c3a340e6fe9d0f3}\label{main_8c_ac577e6ff8e5d830a9c3a340e6fe9d0f3}} 
+\index{main.c@{main.c}!optrw\_wrapper@{optrw\_wrapper}}
+\index{optrw\_wrapper@{optrw\_wrapper}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{optrw\_wrapper()}{optrw\_wrapper()}}
+{\footnotesize\ttfamily void optrw\+\_\+wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{gr,  }\item[{char $\ast$}]{ch\+Read,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{calc\+\_\+dist }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_ac577e6ff8e5d830a9c3a340e6fe9d0f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{main_8c_ac577e6ff8e5d830a9c3a340e6fe9d0f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a5e609ab158c9c01739f607f5e316a823}\label{main_8c_a5e609ab158c9c01739f607f5e316a823}} 
+\index{main.c@{main.c}!returnAlgoType@{returnAlgoType}}
+\index{returnAlgoType@{returnAlgoType}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{returnAlgoType()}{returnAlgoType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{main_8c_adb18ec2b9ed1925cf043c9787ea44fae}{Algo\+\_\+type}} return\+Algo\+Type (\begin{DoxyParamCaption}\item[{char $\ast$}]{ch\+Read }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{main_8c_a5e609ab158c9c01739f607f5e316a823_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_ade48beabea1ddeccd53f1912a38dc882}\label{main_8c_ade48beabea1ddeccd53f1912a38dc882}} 
+\index{main.c@{main.c}!rw\_wrapper@{rw\_wrapper}}
+\index{rw\_wrapper@{rw\_wrapper}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{rw\_wrapper()}{rw\_wrapper()}}
+{\footnotesize\ttfamily void rw\+\_\+wrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{gr,  }\item[{char $\ast$}]{ch\+Read,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{calc\+\_\+dist }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_ade48beabea1ddeccd53f1912a38dc882_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{main_8c_ade48beabea1ddeccd53f1912a38dc882_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_acafeccefc81bef3f10519af7473b0646}\label{main_8c_acafeccefc81bef3f10519af7473b0646}} 
+\index{main.c@{main.c}!test\_entree@{test\_entree}}
+\index{test\_entree@{test\_entree}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{test\_entree()}{test\_entree()}}
+{\footnotesize\ttfamily int test\+\_\+entree (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{main_8c_acafeccefc81bef3f10519af7473b0646_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{main_8c_acafeccefc81bef3f10519af7473b0646_icgraph}
 \end{center}
 \end{figure}
