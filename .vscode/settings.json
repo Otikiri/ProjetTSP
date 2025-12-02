@@ -11,6 +11,7 @@
         "signal.h": "c",
         "calc_distance.h": "c",
         "p2_2opt.h": "c",
-        "p2_heuristiques.h": "c"
+        "p2_heuristiques.h": "c",
+        "unistd.h": "c"
     }
 }
