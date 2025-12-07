@@ -1,16 +1,65 @@
 PROJECT_NAME           = "TSP Project"
-OUTPUT_DIRECTORY       = /home/otikiri/ProjetTSP/doc
+PROJECT_BRIEF          = "Traveling Salesman Problem Solver"
+PROJECT_NUMBER         = 1.0
+
+# Use relative path instead of absolute
+OUTPUT_DIRECTORY       = doc
+
 INPUT                  = README.md src
-FILE_PATTERNS          = *.c *.h
+FILE_PATTERNS          = *.c *.h *.md
 RECURSIVE              = YES
 EXTRACT_ALL            = YES
-GENERATE_LATEX         = YES
+EXTRACT_STATIC         = YES
+EXTRACT_PRIVATE        = YES
+
+# HTML Improvements
 GENERATE_HTML          = YES
-QUIET                  = NO
+HTML_OUTPUT            = html
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = YES
+HTML_DYNAMIC_SECTIONS  = YES
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = YES
+
+# Source code browser
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Better documentation
 USE_MDFILE_AS_MAINPAGE = README.md
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+
+# Graphs and diagrams
 HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
 CALL_GRAPH             = YES
 CALLER_GRAPH           = YES
-HTML_OUTPUT            = html
-LATEX_OUTPUT           = latex
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_TRANSPARENT        = YES
 
+# LaTeX (optional - disable if you don't need PDF)
+GENERATE_LATEX         = NO
+
+# Warnings and errors
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+
+# Optimization
+OPTIMIZE_OUTPUT_FOR_C  = YES
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES

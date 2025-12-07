@@ -1,38 +1,33 @@
-\hypertarget{matrice_8c}{}\doxysection{src/matrice.c File Reference}
-\label{matrice_8c}\index{src/matrice.c@{src/matrice.c}}
-{\ttfamily \#include \char`\"{}matrice.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+\doxysection{src/matrice.c File Reference}
+\hypertarget{matrice_8c}{}\label{matrice_8c}\index{src/matrice.c@{src/matrice.c}}
+{\ttfamily \#include "{}matrice.\+h"{}}\newline
+{\ttfamily \#include "{}struct.\+h"{}}\newline
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
-Include dependency graph for matrice.\+c\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=321pt]{matrice_8c__incl}
-\end{center}
-\end{figure}
-\doxysubsection*{Classes}
+Include dependency graph for matrice.\+c\+:
+% FIG 0
+\doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structNode}{Node}}
 \item 
 struct \mbox{\hyperlink{structsMatrice}{s\+Matrice}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Typedefs}
+\doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
 typedef struct \mbox{\hyperlink{structNode}{Node}} \mbox{\hyperlink{matrice_8c_a3b09f37e675bcd48a01bf22155996872}{Node}}
 \item 
 typedef struct \mbox{\hyperlink{structsMatrice}{s\+Matrice}} \mbox{\hyperlink{matrice_8c_af7b7ccc22f97519c24fd0f059670ed1f}{s\+Matrice}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} \mbox{\hyperlink{matrice_8c_a481576d3f075460eb19a693f9d8cc924}{create\+New\+Mat}} ()
 \begin{DoxyCompactList}\small\item\em Creation d\textquotesingle{}une nouvelle sous matrice. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} \mbox{\hyperlink{matrice_8c_a6b166768f75cb194579c8ca6c6c285e9}{add\+Point\+To\+Matrice}} (\mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} mat, \mbox{\hyperlink{structPoint}{Point}} p, \mbox{\hyperlink{structGraphe}{Graphe}} g, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} dist)
+\mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} \mbox{\hyperlink{matrice_8c_a6b166768f75cb194579c8ca6c6c285e9}{add\+Point\+To\+Matrice}} (\mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} mat, \mbox{\hyperlink{structPoint}{Point}} p, \mbox{\hyperlink{structGraphe}{Graphe}} g, \mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}} dist)
 \begin{DoxyCompactList}\small\item\em Ajouter un point a une matrice. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} \mbox{\hyperlink{matrice_8c_a663bbcfc009ba3bc74a2365df3d8b2c1}{create\+Matrice\+From\+Graphe}} (\mbox{\hyperlink{structGraphe}{Graphe}} g, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} dist)
+\mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} \mbox{\hyperlink{matrice_8c_a663bbcfc009ba3bc74a2365df3d8b2c1}{create\+Matrice\+From\+Graphe}} (\mbox{\hyperlink{structGraphe}{Graphe}} g, \mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}} dist)
 \begin{DoxyCompactList}\small\item\em Creer une matrice en utilisant une graphe. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{matrice_8c_a1f28309512b940f720c96271d77d5878}{free\+Matrice}} (\mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} \mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}})
 \begin{DoxyCompactList}\small\item\em detruie la matrice rentrer en parametre \end{DoxyCompactList}\item 
@@ -43,13 +38,13 @@ void \mbox{\hyperlink{matrice_8c_a005d55f7fd492119bf11e1b604d4398f}{print\+Matri
 
 
 \doxysubsection{Typedef Documentation}
-\mbox{\Hypertarget{matrice_8c_a3b09f37e675bcd48a01bf22155996872}\label{matrice_8c_a3b09f37e675bcd48a01bf22155996872}} 
+\Hypertarget{matrice_8c_a3b09f37e675bcd48a01bf22155996872}\label{matrice_8c_a3b09f37e675bcd48a01bf22155996872} 
 \index{matrice.c@{matrice.c}!Node@{Node}}
 \index{Node@{Node}!matrice.c@{matrice.c}}
 \doxysubsubsection{\texorpdfstring{Node}{Node}}
 {\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structNode}{Node}} \mbox{\hyperlink{structNode}{Node}}}
 
-\mbox{\Hypertarget{matrice_8c_af7b7ccc22f97519c24fd0f059670ed1f}\label{matrice_8c_af7b7ccc22f97519c24fd0f059670ed1f}} 
+\Hypertarget{matrice_8c_af7b7ccc22f97519c24fd0f059670ed1f}\label{matrice_8c_af7b7ccc22f97519c24fd0f059670ed1f} 
 \index{matrice.c@{matrice.c}!sMatrice@{sMatrice}}
 \index{sMatrice@{sMatrice}!matrice.c@{matrice.c}}
 \doxysubsubsection{\texorpdfstring{sMatrice}{sMatrice}}
@@ -58,11 +53,11 @@ void \mbox{\hyperlink{matrice_8c_a005d55f7fd492119bf11e1b604d4398f}{print\+Matri
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{matrice_8c_a6b166768f75cb194579c8ca6c6c285e9}\label{matrice_8c_a6b166768f75cb194579c8ca6c6c285e9}} 
+\Hypertarget{matrice_8c_a6b166768f75cb194579c8ca6c6c285e9}\label{matrice_8c_a6b166768f75cb194579c8ca6c6c285e9} 
 \index{matrice.c@{matrice.c}!addPointToMatrice@{addPointToMatrice}}
 \index{addPointToMatrice@{addPointToMatrice}!matrice.c@{matrice.c}}
 \doxysubsubsection{\texorpdfstring{addPointToMatrice()}{addPointToMatrice()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} add\+Point\+To\+Matrice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}}}]{mat,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{p,  }\item[{\mbox{\hyperlink{structGraphe}{Graphe}}}]{g,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{dist }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} add\+Point\+To\+Matrice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}}}]{mat,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{p,  }\item[{\mbox{\hyperlink{structGraphe}{Graphe}}}]{g,  }\item[{\mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}}}]{dist }\end{DoxyParamCaption})}
 
 
 
@@ -72,30 +67,20 @@ Ajouter un point a une matrice.
 \begin{DoxyParams}{Parameters}
 {\em mat} & Matrice ou on rajoute le point \\
 \hline
-{\em p} & \mbox{\hyperlink{structPoint}{Point}} a rajouter \\
+{\em p} & \doxylink{structPoint}{Point} a rajouter \\
 \hline
 {\em Distance\+Fun} & fonction de calcule de distance utilise \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=311pt]{matrice_8c_a6b166768f75cb194579c8ca6c6c285e9_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{matrice_8c_a6b166768f75cb194579c8ca6c6c285e9_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{matrice_8c_a663bbcfc009ba3bc74a2365df3d8b2c1}\label{matrice_8c_a663bbcfc009ba3bc74a2365df3d8b2c1}} 
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{matrice_8c_a663bbcfc009ba3bc74a2365df3d8b2c1}\label{matrice_8c_a663bbcfc009ba3bc74a2365df3d8b2c1} 
 \index{matrice.c@{matrice.c}!createMatriceFromGraphe@{createMatriceFromGraphe}}
 \index{createMatriceFromGraphe@{createMatriceFromGraphe}!matrice.c@{matrice.c}}
 \doxysubsubsection{\texorpdfstring{createMatriceFromGraphe()}{createMatriceFromGraphe()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} create\+Matrice\+From\+Graphe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}}}]{g,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{dist }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}} create\+Matrice\+From\+Graphe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}}}]{g,  }\item[{\mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}}}]{dist }\end{DoxyParamCaption})}
 
 
 
@@ -103,26 +88,16 @@ Creer une matrice en utilisant une graphe.
 
 
 \begin{DoxyParams}{Parameters}
-{\em g} & \mbox{\hyperlink{structGraphe}{Graphe}} utilise pour creer la matrice \\
+{\em g} & \doxylink{structGraphe}{Graphe} utilise pour creer la matrice \\
 \hline
 {\em Distance\+Fun} & fonction de calcule de distance utilise \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{matrice_8c_a663bbcfc009ba3bc74a2365df3d8b2c1_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{matrice_8c_a663bbcfc009ba3bc74a2365df3d8b2c1_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{matrice_8c_a481576d3f075460eb19a693f9d8cc924}\label{matrice_8c_a481576d3f075460eb19a693f9d8cc924}} 
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{matrice_8c_a481576d3f075460eb19a693f9d8cc924}\label{matrice_8c_a481576d3f075460eb19a693f9d8cc924} 
 \index{matrice.c@{matrice.c}!createNewMat@{createNewMat}}
 \index{createNewMat@{createNewMat}!matrice.c@{matrice.c}}
 \doxysubsubsection{\texorpdfstring{createNewMat()}{createNewMat()}}
@@ -132,14 +107,9 @@ Here is the caller graph for this function\+:\nopagebreak
 
 Creation d\textquotesingle{}une nouvelle sous matrice. 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{matrice_8c_a481576d3f075460eb19a693f9d8cc924_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{matrice_8c_a1f28309512b940f720c96271d77d5878}\label{matrice_8c_a1f28309512b940f720c96271d77d5878}} 
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{matrice_8c_a1f28309512b940f720c96271d77d5878}\label{matrice_8c_a1f28309512b940f720c96271d77d5878} 
 \index{matrice.c@{matrice.c}!freeMatrice@{freeMatrice}}
 \index{freeMatrice@{freeMatrice}!matrice.c@{matrice.c}}
 \doxysubsubsection{\texorpdfstring{freeMatrice()}{freeMatrice()}}
@@ -154,14 +124,9 @@ detruie la matrice rentrer en parametre
 {\em Matrice} & Matrice a effacer \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{matrice_8c_a1f28309512b940f720c96271d77d5878_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{matrice_8c_adca8dd6fa9a6344c509c7a0a4a3806b4}\label{matrice_8c_adca8dd6fa9a6344c509c7a0a4a3806b4}} 
+Here is the caller graph for this function\+:
+% FIG 6
+\Hypertarget{matrice_8c_adca8dd6fa9a6344c509c7a0a4a3806b4}\label{matrice_8c_adca8dd6fa9a6344c509c7a0a4a3806b4} 
 \index{matrice.c@{matrice.c}!getDistance@{getDistance}}
 \index{getDistance@{getDistance}!matrice.c@{matrice.c}}
 \doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}}
@@ -171,14 +136,9 @@ Here is the caller graph for this function\+:\nopagebreak
 
 donne la distance entre 2 points de la matrice 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{matrice_8c_adca8dd6fa9a6344c509c7a0a4a3806b4_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{matrice_8c_a005d55f7fd492119bf11e1b604d4398f}\label{matrice_8c_a005d55f7fd492119bf11e1b604d4398f}} 
+Here is the caller graph for this function\+:
+% FIG 7
+\Hypertarget{matrice_8c_a005d55f7fd492119bf11e1b604d4398f}\label{matrice_8c_a005d55f7fd492119bf11e1b604d4398f} 
 \index{matrice.c@{matrice.c}!printMatrice@{printMatrice}}
 \index{printMatrice@{printMatrice}!matrice.c@{matrice.c}}
 \doxysubsubsection{\texorpdfstring{printMatrice()}{printMatrice()}}

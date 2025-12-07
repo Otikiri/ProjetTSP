@@ -1,34 +1,35 @@
-\hypertarget{P2__heuristiques_8c}{}\doxysection{src/\+P2\+\_\+heuristiques.c File Reference}
-\label{P2__heuristiques_8c}\index{src/P2\_heuristiques.c@{src/P2\_heuristiques.c}}
-{\ttfamily \#include \char`\"{}P2\+\_\+heuristiques.\+h\char`\"{}}\newline
+\doxysection{src/\+P2\+\_\+heuristiques.c File Reference}
+\hypertarget{P2__heuristiques_8c}{}\label{P2__heuristiques_8c}\index{src/P2\_heuristiques.c@{src/P2\_heuristiques.c}}
+{\ttfamily \#include "{}P2\+\_\+heuristiques.\+h"{}}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$time.\+h$>$}\newline
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}calc\+\_\+distance.\+h\char`\"{}}\newline
-Include dependency graph for P2\+\_\+heuristiques.\+c\+:\nopagebreak
+{\ttfamily \#include "{}calc\+\_\+distance.\+h"{}}\newline
+Include dependency graph for P2\+\_\+heuristiques.\+c\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{P2__heuristiques_8c__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{P2__heuristiques_8c_adcea422048582fdf63def161423a2b4f}{is\+In}} (int n, int $\ast$tab, int tab\+Len)
+bool \mbox{\hyperlink{P2__heuristiques_8c_adcea422048582fdf63def161423a2b4f}{is\+In}} (int n, int \texorpdfstring{$\ast$}{*}tab, int tab\+Len)
 \begin{DoxyCompactList}\small\item\em vérifie si l\textquotesingle{}entier n et dans le tableau tab \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{P2__heuristiques_8c_ac68cd41de0d9ee9e9e2a0db12f58cbc7}{tsp\+\_\+random\+Walk}} (const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$graphe, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} f, \mbox{\hyperlink{structTournee}{Tournee}} $\ast$out\+Tournee, double $\ast$out\+Len)
+int \mbox{\hyperlink{P2__heuristiques_8c_ac68cd41de0d9ee9e9e2a0db12f58cbc7}{tsp\+\_\+random\+Walk}} (const \mbox{\hyperlink{structGraphe}{Graphe}} \texorpdfstring{$\ast$}{*}graphe, \mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}} f, \mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*}out\+Tournee, double \texorpdfstring{$\ast$}{*}out\+Len)
 \begin{DoxyCompactList}\small\item\em calcule une tournee en utilisant l\textquotesingle{}heuristique du random\+Walk \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{P2__heuristiques_8c_a1159582d8c357dad8650993ebbc55a8a}{tsp\+\_\+nearest\+Neighbour}} (const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$graphe, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} f, \mbox{\hyperlink{structTournee}{Tournee}} $\ast$out\+Tournee, double $\ast$out\+Len)
+int \mbox{\hyperlink{P2__heuristiques_8c_a1159582d8c357dad8650993ebbc55a8a}{tsp\+\_\+nearest\+Neighbour}} (const \mbox{\hyperlink{structGraphe}{Graphe}} \texorpdfstring{$\ast$}{*}graphe, \mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}} f, \mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*}out\+Tournee, double \texorpdfstring{$\ast$}{*}out\+Len)
 \begin{DoxyCompactList}\small\item\em calcule une tournee en utilisant l\textquotesingle{}heuristique du nearest neighbour \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{P2__heuristiques_8c_adcea422048582fdf63def161423a2b4f}\label{P2__heuristiques_8c_adcea422048582fdf63def161423a2b4f}} 
+\Hypertarget{P2__heuristiques_8c_adcea422048582fdf63def161423a2b4f}\label{P2__heuristiques_8c_adcea422048582fdf63def161423a2b4f} 
 \index{P2\_heuristiques.c@{P2\_heuristiques.c}!isIn@{isIn}}
 \index{isIn@{isIn}!P2\_heuristiques.c@{P2\_heuristiques.c}}
 \doxysubsubsection{\texorpdfstring{isIn()}{isIn()}}
-{\footnotesize\ttfamily bool is\+In (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int $\ast$}]{tab,  }\item[{int}]{tab\+Len }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool is\+In (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int \texorpdfstring{$\ast$}{*}}]{tab,  }\item[{int}]{tab\+Len }\end{DoxyParamCaption})}
 
 
 
@@ -46,18 +47,19 @@ vérifie si l\textquotesingle{}entier n et dans le tableau tab
 \begin{DoxyReturn}{Returns}
 true si n est dans tab et false sinon 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{P2__heuristiques_8c_adcea422048582fdf63def161423a2b4f_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{P2__heuristiques_8c_a1159582d8c357dad8650993ebbc55a8a}\label{P2__heuristiques_8c_a1159582d8c357dad8650993ebbc55a8a}} 
+\Hypertarget{P2__heuristiques_8c_a1159582d8c357dad8650993ebbc55a8a}\label{P2__heuristiques_8c_a1159582d8c357dad8650993ebbc55a8a} 
 \index{P2\_heuristiques.c@{P2\_heuristiques.c}!tsp\_nearestNeighbour@{tsp\_nearestNeighbour}}
 \index{tsp\_nearestNeighbour@{tsp\_nearestNeighbour}!P2\_heuristiques.c@{P2\_heuristiques.c}}
 \doxysubsubsection{\texorpdfstring{tsp\_nearestNeighbour()}{tsp\_nearestNeighbour()}}
-{\footnotesize\ttfamily int tsp\+\_\+nearest\+Neighbour (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{f,  }\item[{\mbox{\hyperlink{structTournee}{Tournee}} $\ast$}]{out\+Tournee,  }\item[{double $\ast$}]{out\+Len }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int tsp\+\_\+nearest\+Neighbour (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structGraphe}{Graphe}} \texorpdfstring{$\ast$}{*}}]{graphe,  }\item[{\mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}}}]{f,  }\item[{\mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*}}]{out\+Tournee,  }\item[{double \texorpdfstring{$\ast$}{*}}]{out\+Len }\end{DoxyParamCaption})}
 
 
 
@@ -77,25 +79,27 @@ calcule une tournee en utilisant l\textquotesingle{}heuristique du nearest neigh
 \begin{DoxyReturn}{Returns}
 int 0 si tout se passe bien -\/1 en cas d\textquotesingle{}erreur 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{P2__heuristiques_8c_a1159582d8c357dad8650993ebbc55a8a_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{P2__heuristiques_8c_a1159582d8c357dad8650993ebbc55a8a_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{P2__heuristiques_8c_ac68cd41de0d9ee9e9e2a0db12f58cbc7}\label{P2__heuristiques_8c_ac68cd41de0d9ee9e9e2a0db12f58cbc7}} 
+\Hypertarget{P2__heuristiques_8c_ac68cd41de0d9ee9e9e2a0db12f58cbc7}\label{P2__heuristiques_8c_ac68cd41de0d9ee9e9e2a0db12f58cbc7} 
 \index{P2\_heuristiques.c@{P2\_heuristiques.c}!tsp\_randomWalk@{tsp\_randomWalk}}
 \index{tsp\_randomWalk@{tsp\_randomWalk}!P2\_heuristiques.c@{P2\_heuristiques.c}}
 \doxysubsubsection{\texorpdfstring{tsp\_randomWalk()}{tsp\_randomWalk()}}
-{\footnotesize\ttfamily int tsp\+\_\+random\+Walk (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{f,  }\item[{\mbox{\hyperlink{structTournee}{Tournee}} $\ast$}]{out\+Tournee,  }\item[{double $\ast$}]{out\+Len }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int tsp\+\_\+random\+Walk (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structGraphe}{Graphe}} \texorpdfstring{$\ast$}{*}}]{graphe,  }\item[{\mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}}}]{f,  }\item[{\mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*}}]{out\+Tournee,  }\item[{double \texorpdfstring{$\ast$}{*}}]{out\+Len }\end{DoxyParamCaption})}
 
 
 
@@ -115,14 +119,16 @@ calcule une tournee en utilisant l\textquotesingle{}heuristique du random\+Walk
 \begin{DoxyReturn}{Returns}
 int 0 si tout se passe bien -\/1 en cas d\textquotesingle{}erreur 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=333pt]{P2__heuristiques_8c_ac68cd41de0d9ee9e9e2a0db12f58cbc7_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

@@ -1,41 +1,31 @@
-\hypertarget{lectureTSPLIB_8h}{}\doxysection{src/lecture\+TSPLIB.h File Reference}
-\label{lectureTSPLIB_8h}\index{src/lectureTSPLIB.h@{src/lectureTSPLIB.h}}
-{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
-Include dependency graph for lecture\+TSPLIB.\+h\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=190pt]{lectureTSPLIB_8h__incl}
-\end{center}
-\end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{lectureTSPLIB_8h__dep__incl}
-\end{center}
-\end{figure}
-\doxysubsection*{Functions}
+\doxysection{src/lecture\+TSPLIB.h File Reference}
+\hypertarget{lectureTSPLIB_8h}{}\label{lectureTSPLIB_8h}\index{src/lectureTSPLIB.h@{src/lectureTSPLIB.h}}
+{\ttfamily \#include "{}struct.\+h"{}}\newline
+Include dependency graph for lecture\+TSPLIB.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{lectureTSPLIB_8h_a9f9e3c694319d74371adca5948038e4c}{free\+\_\+graphe}} (\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$g)
+void \mbox{\hyperlink{lectureTSPLIB_8h_a9f9e3c694319d74371adca5948038e4c}{free\+\_\+graphe}} (\mbox{\hyperlink{structGraphe}{Graphe}} \texorpdfstring{$\ast$}{*}g)
 \begin{DoxyCompactList}\small\item\em Libère un graphe allouée dynamiquement. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$ \mbox{\hyperlink{lectureTSPLIB_8h_a1a174a6a279fe4ec3f75915c03e935cf}{read\+\_\+\+TSPLIB}} (const char $\ast$fichier)
-\begin{DoxyCompactList}\small\item\em Lit un fichier TSPLIB et crée un \mbox{\hyperlink{structGraphe}{Graphe}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structTournee}{Tournee}} $\ast$ \mbox{\hyperlink{lectureTSPLIB_8h_ada80ce156789590ff55aa2d2b602a403}{create\+Tourne\+Canonique}} (\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$g)
+\mbox{\hyperlink{structGraphe}{Graphe}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{lectureTSPLIB_8h_a9cdb3edbdd1bc26082905e98d5d2df5b}{read\+\_\+\+TSPLIB}} (const char \texorpdfstring{$\ast$}{*}fichier)
+\begin{DoxyCompactList}\small\item\em Lit un fichier TSPLIB et crée un \doxylink{structGraphe}{Graphe}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{lectureTSPLIB_8h_acf8c398b4723e05903d39f4ddd579715}{create\+Tourne\+Canonique}} (\mbox{\hyperlink{structGraphe}{Graphe}} \texorpdfstring{$\ast$}{*}g)
 \begin{DoxyCompactList}\small\item\em Creer dynamiquement et renvoie la tournee canonique tu graphe passe en parametre. \end{DoxyCompactList}\item 
-char $\ast$ \mbox{\hyperlink{lectureTSPLIB_8h_a47a4df6ceebd46f6e9760ac6b38d3459}{to\+String\+Array}} (\mbox{\hyperlink{structTournee}{Tournee}} T)
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{lectureTSPLIB_8h_a916437c0e150ad502bfc8da5168dcebd}{to\+String\+Array}} (\mbox{\hyperlink{structTournee}{Tournee}} T)
 \begin{DoxyCompactList}\small\item\em Convertit une tournee passee en parametre en chaine de caracteres formatee. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{lectureTSPLIB_8h_a3a73abb56d66138429ed41b21570f644}{detruire\+Tournee}} (\mbox{\hyperlink{structTournee}{Tournee}} $\ast$t)
-\begin{DoxyCompactList}\small\item\em Fonction liberant l\textquotesingle{}espace memoire de la \mbox{\hyperlink{structTournee}{Tournee}} donnee en parametre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{lectureTSPLIB_8h_a3a73abb56d66138429ed41b21570f644}{detruire\+Tournee}} (\mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*}t)
+\begin{DoxyCompactList}\small\item\em Fonction liberant l\textquotesingle{}espace memoire de la \doxylink{structTournee}{Tournee} donnee en parametre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{lectureTSPLIB_8h_ada80ce156789590ff55aa2d2b602a403}\label{lectureTSPLIB_8h_ada80ce156789590ff55aa2d2b602a403}} 
+\Hypertarget{lectureTSPLIB_8h_acf8c398b4723e05903d39f4ddd579715}\label{lectureTSPLIB_8h_acf8c398b4723e05903d39f4ddd579715} 
 \index{lectureTSPLIB.h@{lectureTSPLIB.h}!createTourneCanonique@{createTourneCanonique}}
 \index{createTourneCanonique@{createTourneCanonique}!lectureTSPLIB.h@{lectureTSPLIB.h}}
 \doxysubsubsection{\texorpdfstring{createTourneCanonique()}{createTourneCanonique()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structTournee}{Tournee}}$\ast$ create\+Tourne\+Canonique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{g }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*} create\+Tourne\+Canonique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} \texorpdfstring{$\ast$}{*}}]{g }\end{DoxyParamCaption})}
 
 
 
@@ -43,49 +33,39 @@ Creer dynamiquement et renvoie la tournee canonique tu graphe passe en parametre
 
 
 \begin{DoxyParams}{Parameters}
-{\em g} & \mbox{\hyperlink{structGraphe}{Graphe}} dont on veut la tournee canonique \\
+{\em g} & \doxylink{structGraphe}{Graphe} dont on veut la tournee canonique \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Tournee$\ast$ 
+Tournee\texorpdfstring{$\ast$}{*} 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{lectureTSPLIB_8h_ada80ce156789590ff55aa2d2b602a403_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{lectureTSPLIB_8h_a3a73abb56d66138429ed41b21570f644}\label{lectureTSPLIB_8h_a3a73abb56d66138429ed41b21570f644}} 
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{lectureTSPLIB_8h_a3a73abb56d66138429ed41b21570f644}\label{lectureTSPLIB_8h_a3a73abb56d66138429ed41b21570f644} 
 \index{lectureTSPLIB.h@{lectureTSPLIB.h}!detruireTournee@{detruireTournee}}
 \index{detruireTournee@{detruireTournee}!lectureTSPLIB.h@{lectureTSPLIB.h}}
 \doxysubsubsection{\texorpdfstring{detruireTournee()}{detruireTournee()}}
-{\footnotesize\ttfamily void detruire\+Tournee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTournee}{Tournee}} $\ast$}]{t }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void detruire\+Tournee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*}}]{t }\end{DoxyParamCaption})}
 
 
 
-Fonction liberant l\textquotesingle{}espace memoire de la \mbox{\hyperlink{structTournee}{Tournee}} donnee en parametre. 
+Fonction liberant l\textquotesingle{}espace memoire de la \doxylink{structTournee}{Tournee} donnee en parametre. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em t} & \mbox{\hyperlink{structTournee}{Tournee}} a detruire \\
+{\em t} & \doxylink{structTournee}{Tournee} a detruire \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{lectureTSPLIB_8h_a3a73abb56d66138429ed41b21570f644_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{lectureTSPLIB_8h_a9f9e3c694319d74371adca5948038e4c}\label{lectureTSPLIB_8h_a9f9e3c694319d74371adca5948038e4c}} 
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{lectureTSPLIB_8h_a9f9e3c694319d74371adca5948038e4c}\label{lectureTSPLIB_8h_a9f9e3c694319d74371adca5948038e4c} 
 \index{lectureTSPLIB.h@{lectureTSPLIB.h}!free\_graphe@{free\_graphe}}
 \index{free\_graphe@{free\_graphe}!lectureTSPLIB.h@{lectureTSPLIB.h}}
 \doxysubsubsection{\texorpdfstring{free\_graphe()}{free\_graphe()}}
-{\footnotesize\ttfamily void free\+\_\+graphe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} $\ast$}]{g }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void free\+\_\+graphe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraphe}{Graphe}} \texorpdfstring{$\ast$}{*}}]{g }\end{DoxyParamCaption})}
 
 
 
@@ -99,22 +79,17 @@ Libère un graphe allouée dynamiquement.
 \begin{DoxyReturn}{Returns}
 Void 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=345pt]{lectureTSPLIB_8h_a9f9e3c694319d74371adca5948038e4c_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{lectureTSPLIB_8h_a1a174a6a279fe4ec3f75915c03e935cf}\label{lectureTSPLIB_8h_a1a174a6a279fe4ec3f75915c03e935cf}} 
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{lectureTSPLIB_8h_a9cdb3edbdd1bc26082905e98d5d2df5b}\label{lectureTSPLIB_8h_a9cdb3edbdd1bc26082905e98d5d2df5b} 
 \index{lectureTSPLIB.h@{lectureTSPLIB.h}!read\_TSPLIB@{read\_TSPLIB}}
 \index{read\_TSPLIB@{read\_TSPLIB}!lectureTSPLIB.h@{lectureTSPLIB.h}}
 \doxysubsubsection{\texorpdfstring{read\_TSPLIB()}{read\_TSPLIB()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structGraphe}{Graphe}}$\ast$ read\+\_\+\+TSPLIB (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fichier }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGraphe}{Graphe}} \texorpdfstring{$\ast$}{*} read\+\_\+\+TSPLIB (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{fichier }\end{DoxyParamCaption})}
 
 
 
-Lit un fichier TSPLIB et crée un \mbox{\hyperlink{structGraphe}{Graphe}}. 
+Lit un fichier TSPLIB et crée un \doxylink{structGraphe}{Graphe}. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -122,27 +97,17 @@ Lit un fichier TSPLIB et crée un \mbox{\hyperlink{structGraphe}{Graphe}}.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Pointeur vers le \mbox{\hyperlink{structGraphe}{Graphe}} allouée dynamiquement, ou NULL en cas d\textquotesingle{}erreur 
+Pointeur vers le \doxylink{structGraphe}{Graphe} allouée dynamiquement, ou NULL en cas d\textquotesingle{}erreur 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=268pt]{lectureTSPLIB_8h_a1a174a6a279fe4ec3f75915c03e935cf_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=234pt]{lectureTSPLIB_8h_a1a174a6a279fe4ec3f75915c03e935cf_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{lectureTSPLIB_8h_a47a4df6ceebd46f6e9760ac6b38d3459}\label{lectureTSPLIB_8h_a47a4df6ceebd46f6e9760ac6b38d3459}} 
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\Hypertarget{lectureTSPLIB_8h_a916437c0e150ad502bfc8da5168dcebd}\label{lectureTSPLIB_8h_a916437c0e150ad502bfc8da5168dcebd} 
 \index{lectureTSPLIB.h@{lectureTSPLIB.h}!toStringArray@{toStringArray}}
 \index{toStringArray@{toStringArray}!lectureTSPLIB.h@{lectureTSPLIB.h}}
 \doxysubsubsection{\texorpdfstring{toStringArray()}{toStringArray()}}
-{\footnotesize\ttfamily char$\ast$ to\+String\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTournee}{Tournee}}}]{T }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} to\+String\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTournee}{Tournee}}}]{T }\end{DoxyParamCaption})}
 
 
 
@@ -150,16 +115,11 @@ Convertit une tournee passee en parametre en chaine de caracteres formatee.
 
 
 \begin{DoxyParams}{Parameters}
-{\em T} & \mbox{\hyperlink{structTournee}{Tournee}} dont on veut une chaine de caracteres formatee \\
+{\em T} & \doxylink{structTournee}{Tournee} dont on veut une chaine de caracteres formatee \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-char$\ast$ 
+char\texorpdfstring{$\ast$}{*} 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{lectureTSPLIB_8h_a47a4df6ceebd46f6e9760ac6b38d3459_icgraph}
-\end{center}
-\end{figure}
+Here is the caller graph for this function\+:
+% FIG 7

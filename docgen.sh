@@ -1,11 +1,15 @@
 #!/bin/bash
 PROJECT_DIR="$(dirname "$(realpath "$0")")"
+OUTPUT_DIR="$PROJECT_DIR/doc"
 
-# Generate docs
-doxygen "$PROJECT_DIR/Doxyfile"
+# Ensure output directory exists
+mkdir -p "$OUTPUT_DIR"
+
+# Generate docs with overridden output directory
+(cat "$PROJECT_DIR/Doxyfile"; echo "OUTPUT_DIRECTORY = $OUTPUT_DIR") | doxygen -
 
 # Define the correct output file path
-HTML_FILE="$PROJECT_DIR/doc/html/index.html"
+HTML_FILE="$OUTPUT_DIR/html/index.html"
 
 # Check if the file exists
 if [ -f "$HTML_FILE" ]; then

@@ -1,5 +1,5 @@
-\hypertarget{structGraphe}{}\doxysection{Graphe Struct Reference}
-\label{structGraphe}\index{Graphe@{Graphe}}
+\doxysection{Graphe Struct Reference}
+\hypertarget{structGraphe}{}\label{structGraphe}\index{Graphe@{Graphe}}
 
 
 Representation de la structure qui est manipule pour les calculs du TSP.  
@@ -11,14 +11,9 @@ Representation de la structure qui est manipule pour les calculs du TSP.
 
 
 
-Collaboration diagram for Graphe\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=134pt]{structGraphe__coll__graph}
-\end{center}
-\end{figure}
-\doxysubsection*{Public Attributes}
+Collaboration diagram for Graphe\+:
+% FIG 0
+\doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 char \mbox{\hyperlink{structGraphe_a21312064b3fa128da98905e9b5dd71db}{nom}} \mbox{[}32\mbox{]}
@@ -27,11 +22,11 @@ char \mbox{\hyperlink{structGraphe_ad5e2ffb6dc77f19017c544223ce2c8d3}{type\+\_\+
 \item 
 int \mbox{\hyperlink{structGraphe_a2631cf293cf5d9bddf8198c1de580c3d}{dimension}}
 \item 
-\mbox{\hyperlink{structPoint}{Point}} $\ast$ \mbox{\hyperlink{structGraphe_a608f6361082f98068487c958d07b87d6}{point}}
+\mbox{\hyperlink{structPoint}{Point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structGraphe_a608f6361082f98068487c958d07b87d6}{point}}
 \item 
 int \mbox{\hyperlink{structGraphe_a923f488f36159fac3cac84f3241ae40a}{est\+\_\+matrice}}
 \item 
-double $\ast$$\ast$ \mbox{\hyperlink{structGraphe_a541cbf09fc16b2bb9744103ab8daac28}{matrice\+\_\+du\+\_\+test}}
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structGraphe_a541cbf09fc16b2bb9744103ab8daac28}{matrice\+\_\+du\+\_\+test}}
 \end{DoxyCompactItemize}
 
 
@@ -39,38 +34,38 @@ double $\ast$$\ast$ \mbox{\hyperlink{structGraphe_a541cbf09fc16b2bb9744103ab8daa
 Representation de la structure qui est manipule pour les calculs du TSP. 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{structGraphe_a2631cf293cf5d9bddf8198c1de580c3d}\label{structGraphe_a2631cf293cf5d9bddf8198c1de580c3d}} 
+\Hypertarget{structGraphe_a2631cf293cf5d9bddf8198c1de580c3d}\label{structGraphe_a2631cf293cf5d9bddf8198c1de580c3d} 
 \index{Graphe@{Graphe}!dimension@{dimension}}
 \index{dimension@{dimension}!Graphe@{Graphe}}
 \doxysubsubsection{\texorpdfstring{dimension}{dimension}}
 {\footnotesize\ttfamily int Graphe\+::dimension}
 
-Nombre de points dans le fichier \mbox{\Hypertarget{structGraphe_a923f488f36159fac3cac84f3241ae40a}\label{structGraphe_a923f488f36159fac3cac84f3241ae40a}} 
+Nombre de points dans le fichier \Hypertarget{structGraphe_a923f488f36159fac3cac84f3241ae40a}\label{structGraphe_a923f488f36159fac3cac84f3241ae40a} 
 \index{Graphe@{Graphe}!est\_matrice@{est\_matrice}}
 \index{est\_matrice@{est\_matrice}!Graphe@{Graphe}}
 \doxysubsubsection{\texorpdfstring{est\_matrice}{est\_matrice}}
 {\footnotesize\ttfamily int Graphe\+::est\+\_\+matrice}
 
-Partie 1 mentionne que on peut avoir des coords ou des matrices dans les fichiers de jeux de test \mbox{\Hypertarget{structGraphe_a541cbf09fc16b2bb9744103ab8daac28}\label{structGraphe_a541cbf09fc16b2bb9744103ab8daac28}} 
+Partie 1 mentionne que on peut avoir des coords ou des matrices dans les fichiers de jeux de test \Hypertarget{structGraphe_a541cbf09fc16b2bb9744103ab8daac28}\label{structGraphe_a541cbf09fc16b2bb9744103ab8daac28} 
 \index{Graphe@{Graphe}!matrice\_du\_test@{matrice\_du\_test}}
 \index{matrice\_du\_test@{matrice\_du\_test}!Graphe@{Graphe}}
 \doxysubsubsection{\texorpdfstring{matrice\_du\_test}{matrice\_du\_test}}
-{\footnotesize\ttfamily double$\ast$$\ast$ Graphe\+::matrice\+\_\+du\+\_\+test}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Graphe\+::matrice\+\_\+du\+\_\+test}
 
-Matrice donne par le fichier test -\/$>$ null si est\+\_\+matrice = 0 else contient les valeurs donnes par fichier\+\_\+test \mbox{\Hypertarget{structGraphe_a21312064b3fa128da98905e9b5dd71db}\label{structGraphe_a21312064b3fa128da98905e9b5dd71db}} 
+Matrice donne par le fichier test -\/\texorpdfstring{$>$}{>} null si est\+\_\+matrice = 0 else contient les valeurs donnes par fichier\+\_\+test \Hypertarget{structGraphe_a21312064b3fa128da98905e9b5dd71db}\label{structGraphe_a21312064b3fa128da98905e9b5dd71db} 
 \index{Graphe@{Graphe}!nom@{nom}}
 \index{nom@{nom}!Graphe@{Graphe}}
 \doxysubsubsection{\texorpdfstring{nom}{nom}}
 {\footnotesize\ttfamily char Graphe\+::nom\mbox{[}32\mbox{]}}
 
 Nom du fichier ~\newline
- \mbox{\Hypertarget{structGraphe_a608f6361082f98068487c958d07b87d6}\label{structGraphe_a608f6361082f98068487c958d07b87d6}} 
+ \Hypertarget{structGraphe_a608f6361082f98068487c958d07b87d6}\label{structGraphe_a608f6361082f98068487c958d07b87d6} 
 \index{Graphe@{Graphe}!point@{point}}
 \index{point@{point}!Graphe@{Graphe}}
 \doxysubsubsection{\texorpdfstring{point}{point}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structPoint}{Point}}$\ast$ Graphe\+::point}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPoint}{Point}}\texorpdfstring{$\ast$}{*} Graphe\+::point}
 
-Tableau de point \mbox{\Hypertarget{structGraphe_ad5e2ffb6dc77f19017c544223ce2c8d3}\label{structGraphe_ad5e2ffb6dc77f19017c544223ce2c8d3}} 
+Tableau de point \Hypertarget{structGraphe_ad5e2ffb6dc77f19017c544223ce2c8d3}\label{structGraphe_ad5e2ffb6dc77f19017c544223ce2c8d3} 
 \index{Graphe@{Graphe}!type\_edge@{type\_edge}}
 \index{type\_edge@{type\_edge}!Graphe@{Graphe}}
 \doxysubsubsection{\texorpdfstring{type\_edge}{type\_edge}}

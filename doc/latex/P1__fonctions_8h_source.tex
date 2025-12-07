@@ -1,0 +1,26 @@
+\doxysection{P1\+\_\+fonctions.\+h}
+\hypertarget{P1__fonctions_8h_source}{}\label{P1__fonctions_8h_source}\index{src/P1\_fonctions.h@{src/P1\_fonctions.h}}
+\mbox{\hyperlink{P1__fonctions_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ P1\_FONCTIONS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ P1\_FONCTIONS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{struct_8h}{struct.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{matrice_8h}{matrice.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ WITH\_MATRICE\ 1}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ WITHOUT\_MATRICE\ 0}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{P1__fonctions_8h_a31c3abe8a7a1dba481e09eeff95a334a}{tsp\_bruteforce}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structGraphe}{Graphe}}*\ g,\ \mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{DistanceFun}}\ f,\ \textcolor{keywordtype}{bool}\ faire\_matrice\_distance,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structTournee}{Tournee}}*\ outBest,\ \textcolor{keywordtype}{double}*\ outBestLen,\ \mbox{\hyperlink{structTournee}{Tournee}}*\ outWorst,\ \textcolor{keywordtype}{double}*\ outWorstLen);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{typedef}\ double\ (*\mbox{\hyperlink{P1__fonctions_8h_ae59bf56ccd7b2fbda5ef182d5fae6eaf}{DistanceCalc}})(\textcolor{keyword}{const}\ \mbox{\hyperlink{structGraphe}{Graphe}}*\ g,\ \mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{DistanceFun}}\ f,\ \textcolor{keywordtype}{int}\ i,\ \textcolor{keywordtype}{int}\ j,\ \mbox{\hyperlink{structsMatrice}{Matrice}}\ m);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{P1__fonctions_8h_ab55342fc4f408ac45acbb720cac0c54c}{fill\_tournee\_from\_perm}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structGraphe}{Graphe}}*\ g,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}*\ perm,\ \textcolor{keywordtype}{int}\ n,\ \mbox{\hyperlink{structTournee}{Tournee}}*\ out);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

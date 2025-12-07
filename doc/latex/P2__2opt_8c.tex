@@ -1,44 +1,46 @@
-\hypertarget{P2__2opt_8c}{}\doxysection{src/\+P2\+\_\+2opt.c File Reference}
-\label{P2__2opt_8c}\index{src/P2\_2opt.c@{src/P2\_2opt.c}}
-{\ttfamily \#include \char`\"{}P2\+\_\+2opt.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}calc\+\_\+distance.\+h\char`\"{}}\newline
-Include dependency graph for P2\+\_\+2opt.\+c\+:\nopagebreak
+\doxysection{src/\+P2\+\_\+2opt.c File Reference}
+\hypertarget{P2__2opt_8c}{}\label{P2__2opt_8c}\index{src/P2\_2opt.c@{src/P2\_2opt.c}}
+{\ttfamily \#include "{}P2\+\_\+2opt.\+h"{}}\newline
+{\ttfamily \#include "{}calc\+\_\+distance.\+h"{}}\newline
+Include dependency graph for P2\+\_\+2opt.\+c\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=256pt]{P2__2opt_8c__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{P2__2opt_8c_ad63f04280d8249dbdcef72755a97e249}{verify\+Triangle\+Inequality}} (\mbox{\hyperlink{structPoint}{Point}} xi1, \mbox{\hyperlink{structPoint}{Point}} xi2, \mbox{\hyperlink{structPoint}{Point}} xj1, \mbox{\hyperlink{structPoint}{Point}} xj2, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} f)
+bool \mbox{\hyperlink{P2__2opt_8c_ad63f04280d8249dbdcef72755a97e249}{verify\+Triangle\+Inequality}} (\mbox{\hyperlink{structPoint}{Point}} xi1, \mbox{\hyperlink{structPoint}{Point}} xi2, \mbox{\hyperlink{structPoint}{Point}} xj1, \mbox{\hyperlink{structPoint}{Point}} xj2, \mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}} f)
 \item 
-int \mbox{\hyperlink{P2__2opt_8c_a63323b5d4cfeb6f1d9671e900384151c}{switch\+Edges}} (\mbox{\hyperlink{structTournee}{Tournee}} $\ast$tournee, int i, int j)
+int \mbox{\hyperlink{P2__2opt_8c_a63323b5d4cfeb6f1d9671e900384151c}{switch\+Edges}} (\mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*}tournee, int i, int j)
 \item 
-int \mbox{\hyperlink{P2__2opt_8c_a86e13bfb2e11dcbadacdcb34d9f0c0b1}{tsp\+\_\+2opt}} (\mbox{\hyperlink{structTournee}{Tournee}} $\ast$tournee, double $\ast$tournee\+Len, \mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}} f)
+int \mbox{\hyperlink{P2__2opt_8c_a86e13bfb2e11dcbadacdcb34d9f0c0b1}{tsp\+\_\+2opt}} (\mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*}tournee, double \texorpdfstring{$\ast$}{*}tournee\+Len, \mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}} f)
 \begin{DoxyCompactList}\small\item\em améliore une tournee déjà calculé \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{P2__2opt_8c_a63323b5d4cfeb6f1d9671e900384151c}\label{P2__2opt_8c_a63323b5d4cfeb6f1d9671e900384151c}} 
+\Hypertarget{P2__2opt_8c_a63323b5d4cfeb6f1d9671e900384151c}\label{P2__2opt_8c_a63323b5d4cfeb6f1d9671e900384151c} 
 \index{P2\_2opt.c@{P2\_2opt.c}!switchEdges@{switchEdges}}
 \index{switchEdges@{switchEdges}!P2\_2opt.c@{P2\_2opt.c}}
 \doxysubsubsection{\texorpdfstring{switchEdges()}{switchEdges()}}
-{\footnotesize\ttfamily int switch\+Edges (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTournee}{Tournee}} $\ast$}]{tournee,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int switch\+Edges (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*}}]{tournee,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{P2__2opt_8c_a63323b5d4cfeb6f1d9671e900384151c_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{P2__2opt_8c_a86e13bfb2e11dcbadacdcb34d9f0c0b1}\label{P2__2opt_8c_a86e13bfb2e11dcbadacdcb34d9f0c0b1}} 
+\Hypertarget{P2__2opt_8c_a86e13bfb2e11dcbadacdcb34d9f0c0b1}\label{P2__2opt_8c_a86e13bfb2e11dcbadacdcb34d9f0c0b1} 
 \index{P2\_2opt.c@{P2\_2opt.c}!tsp\_2opt@{tsp\_2opt}}
 \index{tsp\_2opt@{tsp\_2opt}!P2\_2opt.c@{P2\_2opt.c}}
 \doxysubsubsection{\texorpdfstring{tsp\_2opt()}{tsp\_2opt()}}
-{\footnotesize\ttfamily int tsp\+\_\+2opt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTournee}{Tournee}} $\ast$}]{tournee,  }\item[{double $\ast$}]{tournee\+Len,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{f }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int tsp\+\_\+2opt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTournee}{Tournee}} \texorpdfstring{$\ast$}{*}}]{tournee,  }\item[{double \texorpdfstring{$\ast$}{*}}]{tournee\+Len,  }\item[{\mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}}}]{f }\end{DoxyParamCaption})}
 
 
 
@@ -56,27 +58,30 @@ améliore une tournee déjà calculé
 \begin{DoxyReturn}{Returns}
 int 0 si tout se passe bien -\/1 en cas d\textquotesingle{}erreur 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=306pt]{P2__2opt_8c_a86e13bfb2e11dcbadacdcb34d9f0c0b1_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=341pt]{P2__2opt_8c_a86e13bfb2e11dcbadacdcb34d9f0c0b1_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{P2__2opt_8c_ad63f04280d8249dbdcef72755a97e249}\label{P2__2opt_8c_ad63f04280d8249dbdcef72755a97e249}} 
+\Hypertarget{P2__2opt_8c_ad63f04280d8249dbdcef72755a97e249}\label{P2__2opt_8c_ad63f04280d8249dbdcef72755a97e249} 
 \index{P2\_2opt.c@{P2\_2opt.c}!verifyTriangleInequality@{verifyTriangleInequality}}
 \index{verifyTriangleInequality@{verifyTriangleInequality}!P2\_2opt.c@{P2\_2opt.c}}
 \doxysubsubsection{\texorpdfstring{verifyTriangleInequality()}{verifyTriangleInequality()}}
-{\footnotesize\ttfamily bool verify\+Triangle\+Inequality (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{xi1,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{xi2,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{xj1,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{xj2,  }\item[{\mbox{\hyperlink{struct_8h_a1741a66791e73d3c178ba5579f2464e8}{Distance\+Fun}}}]{f }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool verify\+Triangle\+Inequality (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{xi1,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{xi2,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{xj1,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{xj2,  }\item[{\mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{Distance\+Fun}}}]{f }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

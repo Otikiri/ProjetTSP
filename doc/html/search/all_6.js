@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['fill_5ftournee_5ffrom_5fperm_33',['fill_tournee_from_perm',['../P1__fonctions_8c.html#ab55342fc4f408ac45acbb720cac0c54c',1,'fill_tournee_from_perm(const Graphe *g, const int *perm, int n, Tournee *out):&#160;P1_fonctions.c'],['../P1__fonctions_8h.html#ab55342fc4f408ac45acbb720cac0c54c',1,'fill_tournee_from_perm(const Graphe *g, const int *perm, int n, Tournee *out):&#160;P1_fonctions.c']]],
-  ['fnct_5faffichage_2ec_34',['fnct_affichage.c',['../fnct__affichage_8c.html',1,'']]],
-  ['fnct_5faffichage_2eh_35',['fnct_affichage.h',['../fnct__affichage_8h.html',1,'']]],
-  ['free_5fgraphe_36',['free_graphe',['../lectureTSPLIB_8c.html#a9f9e3c694319d74371adca5948038e4c',1,'free_graphe(Graphe *g):&#160;lectureTSPLIB.c'],['../lectureTSPLIB_8h.html#a9f9e3c694319d74371adca5948038e4c',1,'free_graphe(Graphe *g):&#160;lectureTSPLIB.c']]],
-  ['freematrice_37',['freeMatrice',['../matrice_8c.html#a1f28309512b940f720c96271d77d5878',1,'freeMatrice(Matrice Matrice):&#160;matrice.c'],['../matrice_8h.html#a1f28309512b940f720c96271d77d5878',1,'freeMatrice(Matrice Matrice):&#160;matrice.c']]]
+  ['addpointtomatrice_0',['addpointtomatrice',['../matrice_8c.html#a6b166768f75cb194579c8ca6c6c285e9',1,'addPointToMatrice(Matrice mat, Point p, Graphe g, DistanceFun dist):&#160;matrice.c'],['../matrice_8h.html#a2f6bd07860611ba2d6118ba6a8cdeb5f',1,'addPointToMatrice(Matrice mat, Point p, Graphe g, DistanceFun):&#160;matrice.c']]],
+  ['affichage_5ferreur_1',['affichage_erreur',['../fnct__affichage_8c.html#aedb2b33ef2b081e69048f321459653f4',1,'affichage_erreur():&#160;fnct_affichage.c'],['../fnct__affichage_8h.html#aedb2b33ef2b081e69048f321459653f4',1,'affichage_erreur():&#160;fnct_affichage.c']]],
+  ['affichage_5fhelp_2',['affichage_help',['../fnct__affichage_8c.html#a1d0f8f3272ce4fe83344792a19375ff5',1,'affichage_help():&#160;fnct_affichage.c'],['../fnct__affichage_8h.html#a1d0f8f3272ce4fe83344792a19375ff5',1,'affichage_help():&#160;fnct_affichage.c']]],
+  ['affichageresultat_3',['affichageresultat',['../fnct__affichage_8c.html#a1eadb71bcc688effcb9ef828dc8c0e9f',1,'affichageResultat(Graphe *g, char *tourneString, double resultat_calc, double temps, char *methode_calc):&#160;fnct_affichage.c'],['../fnct__affichage_8h.html#a1eadb71bcc688effcb9ef828dc8c0e9f',1,'affichageResultat(Graphe *g, char *tourneString, double resultat_calc, double temps, char *methode_calc):&#160;fnct_affichage.c']]],
+  ['algo_5ftype_4',['Algo_type',['../main_8c.html#adb18ec2b9ed1925cf043c9787ea44fae',1,'main.c']]],
+  ['avance_5',['Projet du TSP de l&apos;UE Projet-Avance',['../index.html',1,'']]]
 ];

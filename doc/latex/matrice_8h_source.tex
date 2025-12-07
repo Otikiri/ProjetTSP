@@ -1,0 +1,29 @@
+\doxysection{matrice.\+h}
+\hypertarget{matrice_8h_source}{}\label{matrice_8h_source}\index{src/matrice.h@{src/matrice.h}}
+\mbox{\hyperlink{matrice_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MATRICE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MATRICE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{struct_8h}{struct.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structsMatrice}{sMatrice}}*\ \mbox{\hyperlink{matrice_8h_aa2235e8cf2ee77c3aeec2504543e17fa}{Matrice}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{typedef}\ double\ (*\mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{DistanceFun}})(\mbox{\hyperlink{structPoint}{Point}}\ p1,\ \mbox{\hyperlink{structPoint}{Point}}\ p2);}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \mbox{\hyperlink{structsMatrice}{Matrice}}\ \mbox{\hyperlink{matrice_8h_a481576d3f075460eb19a693f9d8cc924}{createNewMat}}();}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00021\ \mbox{\hyperlink{structsMatrice}{Matrice}}\ \mbox{\hyperlink{matrice_8h_a2f6bd07860611ba2d6118ba6a8cdeb5f}{addPointToMatrice}}(\mbox{\hyperlink{structsMatrice}{Matrice}}\ mat,\mbox{\hyperlink{structPoint}{Point}}\ p,\mbox{\hyperlink{structGraphe}{Graphe}}\ g,\mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{DistanceFun}});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00028\ \mbox{\hyperlink{structsMatrice}{Matrice}}\ \mbox{\hyperlink{matrice_8h_ac3669e0e8696882d6505afe9ba294202}{createMatriceFromGraphe}}(\mbox{\hyperlink{structGraphe}{Graphe}}\ g,\mbox{\hyperlink{matrice_8h_a4bb21c82494b631cea241fb6f5b58251}{DistanceFun}});}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{matrice_8h_a1f28309512b940f720c96271d77d5878}{freeMatrice}}(\mbox{\hyperlink{structsMatrice}{Matrice}}\ \mbox{\hyperlink{structsMatrice}{Matrice}});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{matrice_8h_acd721f4d7511ef14d80dab0616af06fa}{getDistance}}(\mbox{\hyperlink{structsMatrice}{Matrice}}\ mat,\ \mbox{\hyperlink{structPoint}{Point}}\ p1,\ \mbox{\hyperlink{structPoint}{Point}}\ p2);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{matrice_8h_a005d55f7fd492119bf11e1b604d4398f}{printMatrice}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structsMatrice}{Matrice}}\ mat);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
